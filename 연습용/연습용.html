@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>문서 예제</title>
+    <style>
+      input {
+      }
+      a {
+        width: 100px;
+      }
+      img {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
     <h1>HTML 기본 구조</h1>
@@ -13,10 +23,24 @@
     <p>
       this span is an <span class="highlight">inline-level element </span>; its
       background has been colored to display both the beginning and end of the
-      ekenebt's influence. input elemets, like <input type="raduio" />and
-      <input type="checkbox" />, are alos inline-level content.
+      ekenebt's influence. input elemets, like
+      <input type="number" min="1" max="50" />and <input type="file" />, are
+      alos inline-level content.
+    </p>
+    <p>
+      <form action="/examples/media/request.php" autocomplete="on">이름:<input type="text" name="name">
+      나이:<input type="number" name="age" min="1" max="99" autocomlete="off"><br><br></form>
     </p>
 
     <h1>아다아다아다아다</h1>
+    <img
+      src="https://cdn.pixabay.com/photo/2020/04/20/16/23/glacier-5068893_1280.jpg"
+      alt="pixabay무료이미지"
+    />
+    <a href="defaulst" title="pixabay무료이미지"
+      ><img
+        src="https://cdn.pixabay.com/photo/2020/04/20/16/23/glacier-5068893_1280.jpg"
+        alt="pixabay무료이미지"
+    /></a>
   </body>
 </html>
