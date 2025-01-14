@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .title,
+      .sud,
+      .sud2 {
+        color: red;
+      } */
+      /* h1[class] {
+        color: red;
+      } */
+      img[alt] {
+        width: 100px;
+      }
+      /* p[class="abc"] {
+        color: red;
+      }
+      p[class~="abc"] {
+        color: red;
+      } */
+      /* p[class|="abc"] {
+        color: red;
+      } */
+      /* p[class^="abc"] {
+        color: red;
+      } */
+      p[class$="abc"] {
+        color: red;
+      }
+      a[href^="mailto"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>제목태그</h1>
+    <h1 class="title">제목태그</h1>
+    <h1 class="sud">제목태그</h1>
+    <h1 class="sud2">제목태그</h1>
+    <img src="./images/photo1.jpg" alt="" />
+    <img src="./images/photo2.jpg" />
+    <p class="abc">class명이 우일하게abc와on인 p요소</p>
+    <p class="abc on">class명이 우일하게abc와on인 p요소</p>
+    <p class="abc-on">class명이 우일하게abc와on인 p요소</p>
+    <p class="abc-on">class명이 abc로 끝나는 p요소</p>
+    <p class="abc-on">class명이 abc가 포함되어 있는 p요소</p>
+    <a href="">링크</a>
+    <a href="mailto:443@naver.com">메일</a>
+  </body>
+</html>
