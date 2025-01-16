@@ -10,25 +10,30 @@
         margin: 0;
         padding: 0;
       }
-      p:first-child {
-        position: relative;
+      ul {
         width: 1200px;
-        height: 100px;
-        background-color: red;
+        border: 1px solid;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 0;
       }
-      p:nth-last-child(2) {
-        position: absolute;
-        width: 240px;
-        height: 100px;
-        background-color: yellow;
+      ul li {
+        display: inline-block;
+        background-color: red;
+        width: 100px;
+        font-size: 16px;
+        margin-left: 450px;
+      }
+      li:first-child {
+        margin-left: 0;
       }
     </style>
   </head>
   <body>
-    <p>
-      <li></li>
-      <li></li>
-      <li></li>
-    </p>
+    <ul>
+      <li>왼쪾</li>
+      <li>가운데</li>
+      <li>오른쪽</li>
+    </ul>
   </body>
 </html>
