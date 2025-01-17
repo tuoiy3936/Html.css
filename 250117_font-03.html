@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: solid;
+        src: url(./Webfonts/fa-solid-900.woff2) format(woff2);
+      }
+      p,
+      h1 {
+        font-family: solid;
+      }
+      h1::before {
+        content: "\f002";
+        color: brown;
+      }
+      .material-symbols-outlined {
+        font-size: 300px;
+      }
+      /* 가상선택자를 선택할때는 \필요하다
+      첫번쨰 애들이필요하다 애들들 뒤에 ::before들어간다 */
+    </style>
+  </head>
+  <body>
+    <p>&#xf015;</p>
+    <p>&#xf015;</p>
+    <p>&#xf015;</p>
+    <p>&#xf015;</p>
+    <p>&#xf015;</p>
+    <h1>아이콘문자</h1>
+    <h1>아이콘문자</h1>
+    <h1>아이콘문자</h1>
+    <h1>아이콘문자</h1>
+    <h1>아이콘문자</h1>
+    <span class="material-symbols-outlined"> menu </span>
+    <!-- &#x000;글자가아닌 모양이다 -->
+  </body>
+</html>
