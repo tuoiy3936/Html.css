@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      div:first-child {
+        width: 1200px;
+        height: 100px;
+        background-color: red;
+      }
+      .two:nth-child(2) {
+        width: 1200px;
+        height: 100px;
+        border: 0 solid;
+        background-color: blue;
+      }
+      .p:nth-child(3) {
+        width: 20%;
+        height: 500px;
+        float: left;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="one">
+        <h1>가로크기는 1200px 세로크기는 100px</h1>
+      </div>
+      <div class="two">
+        <h1>가로크기는 1200px 세로크기는 100px</h1>
+      </div>
+      <div>
+        가로크기는 20%세로가로크기는 70% 세로크기는 500px <br />
+        크기는 500p
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>
