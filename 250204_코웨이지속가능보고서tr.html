@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul.ward {
+        width: 1120px;
+        margin: 50px auto;
+        height: 410px;
+        display: flex;
+      }
+      ul.ward li {
+        width: 373.28px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        transition: 0.5s;
+      }
+      ul.ward li:hover {
+        transform: scale(2);
+      }
+      ul.ward li:hover div:first-child p {
+        opacity: 0;
+      }
+      ul.ward li:hover div:nth-child(2) p {
+        opacity: 1;
+      }
+      ul.ward li:first-child {
+        background: url(https://sustainability.coway.co.kr/images/main/policy-img-1.jpg)
+          center/cover;
+      }
+      ul.ward li:nth-child(2) {
+        background: url(https://sustainability.coway.co.kr/images/main/policy-img-2.jpg)
+          center/cover;
+      }
+      ul.ward li:nth-child(3) {
+        background: url(https://sustainability.coway.co.kr/images/main/policy-img-3.jpg)
+          center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="ward">
+      <li>
+        <div>
+          <p>Environmental</p>
+          <p>
+            환경경영<br />
+            기후변화 대응<br />
+            친환경 제품 및 자원순환<br />
+            환경관리
+          </p>
+          <p>
+            <img
+              src="https://sustainability.coway.co.kr/images/main/policy-icon-more.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>Social</p>
+          <p>
+            임직원<br />
+            인권경영<br />
+            공급망<br />
+            고객 중심 경영<br />
+            지역사회<br />
+            안전보건<br />
+            제품 품질 및 안전<br />
+            정보보안 및 개인정보보호
+          </p>
+          <p>
+            <img
+              src="https://sustainability.coway.co.kr/images/main/policy-icon-more.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>Governance</p>
+          <p>
+            지배구조<br />
+            정도경영 대응<br />
+            리스크 관리
+          </p>
+          <p>
+            <img
+              src="https://sustainability.coway.co.kr/images/main/policy-icon-more.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

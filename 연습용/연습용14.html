@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    h1 {
+      text-align: center;
+      margin: 0 auto;
+    }
+    ul {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f3fcfc;
+      position: relative;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    ul li:first-child::after {
+      content: "";
+      position: absolute;
+      border: 1px solid #ddd;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 35px;
+    }
+  </style>
+  <body>
+    <h1>
+      노랑풍선<br />
+      고객서비스 헌장
+    </h1>
+    <ul>
+      <li>
+        <p>거품없는 여행상품</p>
+        <p>
+          거품없는 여행상품으로<br />
+          최고의 만족을 드리겠습니다.
+        </p>
+      </li>
+      <li>
+        <p>고객의 안전</p>
+        <p>
+          고객의 안전을 최우선으로 하여<br />
+          여행문화를 선도하겠습니다.
+        </p>
+      </li>
+      <li>
+        <p>친절한 서비스</p>
+        <p>
+          친절한 서비스로<br />
+          고객감동경영을 실천하겠습니다.
+        </p>
+      </li>
+      <li>
+        <p>약속 준수</p>
+        <p>
+          고객과의 약속을 준수하며<br />
+          업무를 신속하고 정확하게<br />
+          처리하겠습니다.
+        </p>
+      </li>
+      <li>
+        <p>소중한 의견</p>
+        <p>
+          고객의 소중한 의견을<br />
+          경영에 충실히 반영하겠습니다.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
