@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :focus {
+        outline: none;
+      }
+      input[type="search"] {
+        width: 200px;
+        padding: 12px 20px 12px 40px;
+        border-radius: 50px;
+        border: 2px solid #ccc;
+        background-image: url(./images/searchicon.png);
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: 0.5s;
+      }
+      /* input[type="search"]:focus {
+        border: 2px solid #000;
+        width: 500px;
+      } */
+      input[type="search"]:hover {
+        border-color: transparent;
+      }
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/mic1.png" alt="png" />
+    <img src="./images/mic.svg" alt="svg" />
+    <form action="" method="">
+      <input
+        type="search"
+        placeholder="search..."
+        onfocus="this.placeholder=''"
+      />
+    </form>
+  </body>
+</html>

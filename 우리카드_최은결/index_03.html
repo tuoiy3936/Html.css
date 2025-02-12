@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .woori {
+        width: 1080px;
+        height: 364px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        position: relative;
+      }
+      .woori li {
+        position: relative;
+      }
+      .woori li::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 1px;
+        height: 50%;
+        background-color: #ccc;
+      }
+      .woori li a p:first-child {
+        padding: 20px;
+      }
+      .woor li:last-child::after {
+        width: 0;
+      }
+      .woori li div.txt p:first-child {
+        font-size: 24px;
+        padding: 0 0 25px;
+        color: #000;
+      }
+      .woori li div.txt p:last-child {
+        font-size: 18px;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="woori">
+      <li>
+        <a href="#"
+          ><p><img src="./images_03/special_mbnf_1_obj.png" alt="" /></p>
+          <div class="txt">
+            <p>해외이용의 정석</p>
+            <p>여행,직구,항공<br />무엇이든 우리카드로</p>
+          </div></a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><p><img src="./images_03/special_mbnf_2_obj.png" alt="" /></p>
+          <div class="txt">
+            <p>MY pick 서비스</p>
+            <p>혜택도 맞춤! <br />나만을 위한 맞춤 혜택</p>
+          </div></a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><p><img src="./images_03/special_mbnf_3_obj.png" alt="" /></p>
+          <div class="txt">
+            <p>우리V클럽</p>
+            <p>특별함을 원하는<br />고객을 위한 VIP우대 혜택</p>
+          </div></a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><p><img src="./images_03/special_mbnf_4_obj.png" alt="" /></p>
+          <div class="txt">
+            <p>우리 Point</p>
+            <p>차곡차곡 쌓아<br />다양한 곳에서 사용가능</p>
+          </div></a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
