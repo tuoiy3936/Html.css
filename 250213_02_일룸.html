@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-transform: none;
+        color: #333;
+      }
+      .iloom {
+        width: 1040px;
+        height: 297px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .iloom li p {
+        width: 200px;
+        height: 200px;
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_store.svg)
+          center/cover no-repeat;
+      }
+      .iloom li:nth-child(2) p {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_refurb.svg)
+          center/cover no-repeat;
+      }
+      .iloom li:nth-child(3) p {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_new.svg)
+          center/cover no-repeat;
+      }
+      .iloom li:nth-child(4) p {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_best.svg)
+          center/cover no-repeat;
+      }
+      .iloom li p:hover {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_store_hover.svg);
+      }
+      .iloom li:nth-child(2) p:hover {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_refurb_hover.svg);
+      }
+      .iloom li:nth-child(3) p:hover {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_new_hover.svg);
+      }
+      .iloom li:nth-child(4) p:hover {
+        background: url(https://cdn.iloom.com/img/front/main/quick_menu_best_hover.svg);
+      }
+      .iloom li div.txt span {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .iloom li div.txt span:hover {
+        color: #ba0e2f;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="iloom">
+      <li>
+        <p></p>
+        <div class="txt">
+          <span>Store</span>
+          <span>매장안내</span>
+        </div>
+      </li>
+      <li>
+        <p></p>
+        <div class="txt">
+          <span>Refurb</span>
+          <span>전시품판매</span>
+        </div>
+      </li>
+      <li>
+        <p></p>
+        <div class="txt">
+          <span>New Arrival</span>
+          <span>신제품</span>
+        </div>
+      </li>
+      <li>
+        <p></p>
+        <div class="txt">
+          <span>Best ltem</span>
+          <span>인기제품</span>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

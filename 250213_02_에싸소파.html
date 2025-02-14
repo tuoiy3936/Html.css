@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-transform: none;
+        color: #333;
+      }
+      .sofa {
+        width: 1600px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .sofa li a {
+        position: relative;
+      }
+      .txt {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 40px 0 0 30px;
+      }
+      .txt p:first-child {
+        font-size: 27px;
+        color: #fff;
+      }
+      .txt p:last-child {
+        font-size: 19px;
+        color: #fff;
+      }
+      .sofa li:hover img {
+        border-radius: 20px;
+        transition: 0.5s;
+        filter: brightness(80%);
+      }
+      .sofa li:hover .hash {
+        color: #dbcd77;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="sofa">
+      <li>
+        <a href="#">
+          <p>
+            <img
+              src="https://cdn-pro-web-250-249.cdn-nhncommerce.com/jakomo2_godomall_com/site/re2023/pc/main/celeb/story_temp30.jpg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <p>가수 김민석의 윌로우 소파</p>
+            <p class="hash">#WILLOW</p>
+          </div></a
+        >
+      </li>
+      <li>
+        <a href="#">
+          <p>
+            <img
+              src="https://cdn-pro-web-250-249.cdn-nhncommerce.com/jakomo2_godomall_com/site/re2023/pc/main/celeb/story_temp32.jpg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <p>배우 오나라의 라일리 소파</p>
+            <p class="hash">#RILEY</p>
+          </div></a
+        >
+      </li>
+      <li>
+        <a href="#">
+          <p>
+            <img
+              src="https://cdn-pro-web-250-249.cdn-nhncommerce.com/jakomo2_godomall_com/site/re2023/pc/main/celeb/story_temp22.jpg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <p>방송인 주우재의 카리브 소파</p>
+            <p class="hash">#CARIBE</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <p>
+            <img
+              src="https://cdn-pro-web-250-249.cdn-nhncommerce.com/jakomo2_godomall_com/site/re2023/pc/main/celeb/story_temp27.jpg"
+              alt=""
+            />
+          </p>
+          <div class="txt">
+            <p>배우 표예진의 킨슬러 소파</p>
+            <p class="hash">#KINSLER</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

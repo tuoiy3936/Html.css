@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      input {
+        display: none;
+      }
+      .head {
+        width: 1480px;
+        margin: 50px auto;
+        text-align: center;
+      }
+      .head li label {
+        padding: 10px 20px;
+        font-size: 15xp;
+        color: #2e2e2e;
+      }
+      #photo:checked ~ label:nth-of-type(1),
+      #차:checked ~ label:nth-of-type(1),
+      #곡물:checked ~ label:nth-of-type(3),
+      #어린이:checked ~ label:nth-of-type(4),
+      #생수/탄산/이온:checked ~ label:nth-of-type(5),
+      #홍삼/건강/드림크:checked ~ label:nth-of-type(6),
+      #제과:checked ~ label:nth-of-type(7),
+      #해외수입제품:checked ~ label:nth-of-type(8) {
+        color: #71b200;
+        border-bottom: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="photo" id="photo" checked />
+    <input type="radio" name="차" id="차" />
+    <input type="radio" name="곡물" id="곡물" />
+    <input type="radio" name="어린이" id="어린이" />
+    <input type="radio" name="생수/탄산/이온" id="생수/탄산/이온" />
+    <input type="radio" name="홍삼/건강/드링크" id="홍삼/건강/드링크" />
+    <input type="radio" name="제과" id="제과" />
+    <input type="radio" name="해외수입제품" id="해외수입제품" />
+    <ul class="head">
+      <h1>웅진 브랜드</h1>
+      <span>맛있고 건강한 웅진식품 대표 브랜드를 확인해보세요</span>
+
+      <label for="photo">주스</label>
+      <label for="차">차</label>
+      <label for="곡물">곡물</label>
+      <label for="어린이">어린이</label>
+      <label for="생수/탄산/이온">생수/탄산/이온</label>
+      <label for="홍삼/건강/드링크">홍삼/건강/드링크</label>
+      <label for="제과">제과</label>
+      <label for="해외수입제품">해외수입제품</label>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .head {
+        width: 1480px;
+        margin: 50px auto;
+      }
+      .head h1 {
+        text-align: center;
+      }
+      .head span {
+        display: block;
+        text-align: center;
+      }
+      .head li.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .head li.menu a p {
+        padding: 20px 20px;
+        font-size: 15px;
+        color: #2e2e2e;
+        margin-bottom: 10px;
+      }
+      .head li.menu a p:hover {
+        color: #71b200;
+        border-bottom: 2px solid;
+      }
+      .menu2 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        position: relative;
+      }
+      .menu2 a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border-width: 0px 0px 1px 1px;
+        border-style: solid;
+        transform: rotate(45deg);
+      }
+      .menu2 a::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border-width: 1px 1px 0px 0px;
+        border-style: solid;
+        transform: rotate(45deg);
+      }
+      .menu2 a p img {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="head">
+      <h1>웅진 브랜드</h1>
+      <span>맛있고 건강한 웅진식품 대표 브랜드를 확인해보세요.</span>
+
+      <li class="menu">
+        <a href="#">
+          <p>주스</p>
+        </a>
+        <a href="#">
+          <p>차</p>
+        </a>
+        <a href="#">
+          <p>곡물</p>
+        </a>
+        <a href="#">
+          <p>어린이</p>
+        </a>
+        <a href="#">
+          <p>생수/탄산/이온</p>
+        </a>
+        <a href="#">
+          <p>홍삼/건강/드링크</p>
+        </a>
+        <a href="#">
+          <p>제과</p>
+        </a>
+        <a href="#">
+          <p>해외수입제품</p>
+        </a>
+      </li>
+      <li class="menu2">
+        <a href="#">
+          <p></p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/brand/988f4c9d-4968-4fff-ac87-bee8bf0ca79d.png"
+              alt=""
+            />
+          </p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/brand/dad9b103-f115-42a0-b0a5-cfd25561c3be.png"
+              alt=""
+            />
+          </p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/brand/ab012b6f-ce24-4d5b-ac20-76541c911f0f.png"
+              alt=""
+            />
+          </p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/brand/a3d59de4-4bcd-4a12-ac0d-1a5608544137.png"
+              alt=""
+            />
+          </p>
+          <p>
+            <img
+              src="https://www.wjfood.co.kr/uploads/brand/a5699127-9db4-4568-9d60-305e0f20009c.png"
+              alt=""
+            />
+          </p>
+          <p></p>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
