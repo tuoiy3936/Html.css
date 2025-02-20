@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      input {
+        display: none;
+      }
+      .con {
+        width: 500px;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(16, 16, 16, 50%);
+        border-radius: 10px;
+      }
+      .con > div {
+        flex: 1;
+        position: relative;
+      }
+      .con > div a {
+        color: #fff;
+      }
+      .con > div:nth-of-type(2)::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        right: 40px;
+        bottom: 5px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .con1 {
+        position: relative;
+      }
+      .con1 div:nth-child(2) {
+        display: block;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        left: -50px;
+        top: 130%;
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+        transition: 0.5s;
+      }
+      .con1 div a p {
+        color: #000;
+        text-align: center;
+      }
+      .con2 {
+        position: relative;
+      }
+      .con2 div:nth-child(2) {
+        display: block;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        right: 50px;
+        top: 130%;
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+      }
+      #menu1:checked ~ .con .con1 div:nth-of-type(1) {
+        display: none;
+      }
+      #menu2:checked ~ .con .con2 div:nth-of-type(1) {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="menu" id="menu1" checked />
+    <input type="radio" name="menu" id="menu2" />
+    <div class="con">
+      <div>
+        <a href="#">
+          <img src="https://www.doosanrobotics.com/images/icon-home.svg" alt=""
+        /></a>
+      </div>
+      <div class="con1">
+        <a href="#"><label for="menu1">교육&서비스</label></a>
+        <div>
+          <a href="#"><p>제품&솔루션</p></a>
+          <a href="#"><p>교육&서비스</p></a>
+          <a href="#"><p>투자정보</p></a>
+          <a href="#"><p>회사소개</p></a>
+        </div>
+      </div>
+      <div class="con2">
+        <a href="#"><label for="menu1">두산 로봇 교육</label></a>
+        <div>
+          <a href="#">두산 로봇 교육</a>
+          <a href="#">다운로드 센터</a>
+          <a href="#">A/S센터</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

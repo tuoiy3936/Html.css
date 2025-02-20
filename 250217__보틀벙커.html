@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      input {
+        display: none;
+      }
+      .head {
+        width: 1173px;
+        margin: 0 auto;
+        display: flex;
+      }
+      #menu1:checked ~ .head .menu {
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="menu" id="menu1" checked />
+    <input type="radio" name="menu" id="menu2" />
+    <div class="head">
+      <div>
+        <img
+          src="https://www.bottlebunker.co.kr/_next/image?url=https%3A%2F%2Fbottlebunker-front-common-bucket.s3.ap-northeast-2.amazonaws.com%2Fweb%2Fimages%2FimgCi.png&w=256&q=75"
+          alt=""
+        />
+      </div>
+      <div class="menu">
+        <label for="menu1">와인</label>
+        <label for="menu2">위스키</label>
+      </div>
+    </div>
+  </body>
+</html>
