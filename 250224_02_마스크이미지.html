@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mask {
+        mask-image: url(./w3logo.png);
+        /* mask-size: cover; */
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+      .mask1 {
+        /* mask-image: linear-gradient(to right, black, transparent); */
+        mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="mask"><img src="./images/photo1.jpg" alt="photo1" /></p>
+    <p class="mask1"><img src="./img_5terre.jpg" alt="" /></p>
+  </body>
+</html>

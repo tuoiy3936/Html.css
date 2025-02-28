@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .top {
+        width: 1897px;
+        height: 43px;
+        position: relative;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .top ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .top ul li a {
+        font-size: 12px;
+        color: #888888;
+        margin: 0 6px;
+        text-align: right;
+      }
+      .top ul li:first-child:after {
+        content: ".";
+        position: absolute;
+        margin: -3px -3px;
+        display: inline-block;
+      }
+      .top ul li:nth-child(2):after {
+        content: ".";
+        position: absolute;
+        margin: -3px -3px;
+        display: inline-block;
+      }
+      .top ul li:nth-child(3):after {
+        content: "|";
+        top: -2px;
+        margin: 0 20px;
+        color: #d1d1d1;
+      }
+      li span img {
+        margin: -2px 2px;
+      }
+      .head ul {
+        width: 1897px;
+        display: flex;
+        position: relative;
+      }
+      .head ul li h1 {
+        position: absolute;
+        left: 80px;
+        top: 0;
+      }
+      .nav {
+      }
+      .login {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <ul>
+        <li>
+          <a href="#">KR</a>
+        </li>
+        <li>
+          <a href="#">EN</a>
+        </li>
+        <li>
+          <a href="#">CN</a>
+        </li>
+        <li>
+          <a href="#"
+            ><span
+              ><img
+                src="https://www.shinsegae.com/resources/site/img/common/gnb/gnb_ico_ssgcom.png"
+                alt="" /></span
+            ><span>SSG.COM</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="head">
+      <ul>
+        <li>
+          <h1>
+            <a href="https://www.shinsegae.com/"
+              ><img
+                src="https://www.shinsegae.com/resources/site/img/common/gnb/gnb_logo.png"
+                alt=""
+            /></a>
+          </h1>
+        </li>
+        <div class="nav">
+          <li><a href="#">점포안내</a></li>
+          <li><a href="#">쇼핑정보</a></li>
+          <li><a href="#">신세계브랜드</a></li>
+          <li><a href="#">아트&컬처</a></li>
+          <li><a href="#">매거진</a></li>
+          <li><a href="#">고객 서비스</a></li>
+          <li><a href="#">ESG경영</a></li>
+        </div>
+        <div class="login">
+          <li>
+            <a href="#"
+              ><span
+                ><img
+                  src="https://www.shinsegae.com/resources/site/img/common/gnb/gnb_ico_login.png"
+                  alt=""
+              /></span>
+              <span>로그인</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://www.shinsegae.com/resources/site/img/common/gnb/gnb_ico_search.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>

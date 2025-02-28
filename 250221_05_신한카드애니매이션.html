@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .head {
+        width: 1200px;
+        height: 399px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        background: #f7f8fc;
+      }
+      .head ul li {
+        width: 216px;
+        height: 293px;
+        padding: 32px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        transition: 0.5s;
+      }
+      .head ul li a p {
+        position: relative;
+      }
+      .head ul li a p:first-child {
+        font-size: 20px;
+      }
+      .head ul li a p:nth-child(2) {
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .head ul li a p:nth-child(3) {
+        width: 120px;
+        height: 120px;
+        background: url(./images/img01.png) center;
+        margin: 20px 0 30px 45px;
+      }
+      .head ul li a p:nth-child(3):hover {
+        background: url(./images/img01_bg.png) center;
+        animation: move 3s steps(91) infinite;
+      }
+      .head ul li a p:nth-child(4) {
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid #f1f4fb;
+        border-radius: 20px;
+        background: #f1f4fb;
+      }
+      .head ul li a p span:nth-child(2) img {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        transform: rotate(-90deg);
+      }
+      @keyframes move {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -10920px 0;
+        }
+      }
+      .head ul li:hover {
+        border: 1px solid #356cff;
+        background: #f7f8fc;
+        transform: translateY(-20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <ul>
+        <li>
+          <a href="#">
+            <p>
+              <span>다양한</span>
+              <span><img src="./images/화살표.png" alt="" /></span>
+            </p>
+            <p>Data서비스</p>
+            <p></p>
+            <p>Data One-Stop Service</p>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <p>
+              <span>혁신적인</span
+              ><span><img src="./images/화살표.png" alt="" /></span>
+            </p>
+            <p>솔루션서비스</p>
+            <p></p>
+            <p>상권분석.시장 모니터링</p>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <p>
+              <span>스마트한</span
+              ><span><img src="./images/화살표.png" alt="" /></span>
+            </p>
+            <p>광고서비스</p>
+            <p></p>
+            <p>최적의 고객 타겟팅</p>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <p>
+              <span>탁월한</span>
+              <span><img src="./images/화살표.png" alt="" /></span>
+            </p>
+            <p>API서비스</p>
+            <p></p>
+            <p>Data 실시간 활용</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

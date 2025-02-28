@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        width: 500px;
+        height: 327px;
+        background: url(./images/culoud.gif);
+        animation: ani 3s steps(3) infinite;
+      }
+      .con {
+        width: 120px;
+        height: 120px;
+        background: url(./images/img01_bg.png);
+        animation: con 3s steps(91) infinite;
+      }
+      @keyframes con {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -10920px 0;
+        }
+      }
+      @keyframes ani {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -1500px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <p class="con"></p>
+  </body>
+</html>
