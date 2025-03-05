@@ -1,0 +1,63 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: Arial, 돋움, Dotum, sans-serif;
+}
+.head {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: 100px 300px 200px 50px 50px;
+  grid-template-areas: "logo menu menu menu menu menu" "slide slide slide slide slide slide" "c1 c1 c2 c3 c4 c4" "ftlogo ha ha ha ha ha" "ftlogo copy copy copy copy copy";
+}
+.head .logo {
+  grid-area: logo;
+  line-height: 100px;
+}
+.head .logo img {
+  vertical-align: middle;
+}
+.head .menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.head .menu > ul {
+  display: flex;
+}
+.head .slide {
+  grid-area: slide;
+}
+.head .c1 {
+  grid-area: c1;
+}
+.head .c2 {
+  grid-area: c2;
+}
+.head .c3 {
+  grid-area: c3;
+}
+.head .c4 {
+  grid-area: c4;
+}
+.head .ftlogo {
+  grid-area: ftlogo;
+}
+.head .ha {
+  grid-area: ha;
+}
+.head .copy {
+  grid-area: copy;
+}
