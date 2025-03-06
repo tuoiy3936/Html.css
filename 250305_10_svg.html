@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      svg.rect {
+        width: 500px;
+        height: 500px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        transition: 1s;
+      }
+      svg.rect:hover {
+        stroke-dashoffset: 0;
+      }
+      @keyframes ani {
+        0% {
+          stroke-dashoffset: 1200;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+      svg.cir {
+        width: 500px;
+        height: 500px;
+        stroke-linecap: round;
+        stroke-dasharray: 1257;
+        stroke-dashoffset: 1257;
+        transform: rotate(-90deg);
+        transition: 1s;
+        animation: circleAni 1s infinite;
+      }
+
+      @keyframes circleAni {
+        0% {
+          stroke-dashoffset: 1257;
+        }
+        100% {
+          stroke-dashoffset: 500;
+        }
+      }
+      svg {
+        width: 500px;
+        height: 500px;
+      }
+      svg path {
+        transform: scale(10);
+        stroke: #000;
+        stroke-width: 1px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+        animation: pathAni 3s infinite;
+      }
+      @keyframes pathAni {
+        0% {
+          stroke-dashoffset: 50;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="rect">
+      <rect
+        x="10"
+        y="10"
+        width="300"
+        height="300"
+        fill="none"
+        stroke-width="1"
+        stroke="#000"
+      />
+    </svg>
+    <svg class="cir">
+      <circle
+        cx="250"
+        cy="250"
+        r="200"
+        fill="none"
+        stroke-width="5"
+        stroke="#000"
+      />
+    </svg>
+    <svg>
+      <path
+        class="st0"
+        d="M12,14c-0.8,0-1.5-0.3-2.1-0.9C9.3,12.5,9,11.8,9,11V5c0-0.8,0.3-1.5,0.9-2.1C10.5,2.3,11.2,2,12,2
+	s1.5,0.3,2.1,0.9S15,4.2,15,5v6c0,0.8-0.3,1.5-0.9,2.1C13.5,13.7,12.8,14,12,14z M11,21v-3.1c-1.7-0.2-3.2-1-4.3-2.3S5,12.8,5,11h2
+	c0,1.4,0.5,2.6,1.5,3.5S10.6,16,12,16s2.6-0.5,3.5-1.5S17,12.4,17,11h2c0,1.8-0.6,3.3-1.7,4.6c-1.1,1.3-2.6,2.1-4.3,2.3V21H11z
+	 M12,12c0.3,0,0.5-0.1,0.7-0.3S13,11.3,13,11V5c0-0.3-0.1-0.5-0.3-0.7C12.5,4.1,12.3,4,12,4s-0.5,0.1-0.7,0.3C11.1,4.5,11,4.7,11,5
+	v6c0,0.3,0.1,0.5,0.3,0.7S11.7,12,12,12z"
+      />
+    </svg>
+    <svg>
+      <path
+        class="st0"
+        d="M-36.5,68.5c9.9-19.7,221.9,17.4,307,160c44.9,75.2,27.4,134.4,95,189c64.3,51.9,155.6,59.3,168.1,60.2
+	c30.4,2.1,55.9-0.3,73.9-3.2C96.6,185.7-45.6,86.5-36.5,68.5z"
+      />
+      <path
+        class="st0"
+        d="M-20.5,325.5l186-124c0,0,24-115,177-58S513,268.6,393.7,271s-222.2,20.5-153.2,96.5s-234-16-234-16"
+      />
+    </svg>
+  </body>
+</html>

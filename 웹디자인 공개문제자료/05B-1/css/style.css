@@ -36,6 +36,11 @@ body {
 }
 .head .menu > ul {
   display: flex;
+  width: 600px;
+  height: 50px;
+}
+.head .menu > ul > li a {
+  text-align: center;
 }
 .head .slide {
   grid-area: slide;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .head {
+        width: 1520px;
+        margin: 0 auto;
+        border-top: 2px solid #000;
+        position: relative;
+      }
+      .con1 {
+        position: relative;
+        padding: 20px 0 0;
+        margin-bottom: 20px;
+      }
+      .con1 a::after {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: #ccc;
+        width: 100%;
+        height: 1px;
+      }
+      .con1 label {
+        font-size: 32px;
+        font-weight: bold;
+        color: #000;
+      }
+      .con1 a label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #000;
+        width: 23px;
+        height: 3px;
+        margin: -1px 0 0 -11px;
+      }
+      .con1 a label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #000;
+        width: 3px;
+        height: 23px;
+        margin: -11px 0 0 -1px;
+      }
+      #GS:checked ~ p:nth-child(1) img {
+        display: block;
+      }
+      .con2 {
+        position: relative;
+        padding: 30px 0 20px 5px;
+      }
+      .con2 a::after {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: #ccc;
+        width: 100%;
+        height: 1px;
+      }
+      .con2 label {
+        font-size: 32px;
+        font-weight: bold;
+        color: #000;
+      }
+      .con2 a label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #000;
+        width: 23px;
+        height: 3px;
+        margin: -1px 0 0 -11px;
+      }
+      .con2 a label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #000;
+        width: 3px;
+        height: 23px;
+        margin: -11px 0 0 -1px;
+      }
+      p img {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="GS" id="GS" />
+    <input type="radio" name="GS" id="in" />
+    <div class="head">
+      <ul class="con1">
+        <a href="#"><label for="GS">GS건설</label></a>
+      </ul>
+      <p>
+        <img
+          src="https://www.gsenergy.co.kr/pub/images/img_collective_a01.jpg"
+          alt="imgs"
+        />
+      </p>
+
+      <ul class="con2">
+        <a href="#"><label for="in">인천종합에너지</label></a>
+      </ul>
+      <p>
+        <img
+          src="https://www.gsenergy.co.kr/pub/images/img_collective_b01.jpg"
+          alt=""
+        />
+      </p>
+    </div>
+  </body>
+</html>
