@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=yes, minimum-scale=1.0,maximum-scale=2.0 "
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      section {
+        width: 100%;
+        max-width: 1897px;
+        margin: 0 auto;
+      }
+      section ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+      section ul li {
+        flex: 1 0 40%;
+        background: #ccc;
+        padding-top: 50%;
+      }
+      div {
+        width: 1000px;
+        height: 500px;
+        margin: 50px auto;
+        background: #ccc;
+      }
+      @media screen and (max-width: 1897px) {
+        div {
+          width: 450px;
+          height: 480px;
+        }
+        section ul {
+          gap: 20px;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        div {
+          width: 250px;
+          height: 150px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        div {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <ul>
+        <li>
+          <img
+            src="https://www.shinsegaefood.com/images/background/bg_vs_value_1.jpg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            src="https://www.shinsegaefood.com/images/background/bg_vs_value_2.jpg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            src="https://www.shinsegaefood.com/images/background/bg_vs_value_3.jpg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            src="https://www.shinsegaefood.com/images/background/bg_vs_value_4.jpg"
+            alt=""
+          />
+        </li>
+      </ul>
+    </section>
+    <div></div>
+  </body>
+</html>
