@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .head {
+        width: 1700px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .head h3 {
+        position: relative;
+        padding-bottom: 50px;
+        font-size: 40px;
+        color: #000;
+        line-height: 1.25;
+        word-wrap: break-word;
+        word-break: keep-all;
+      }
+      .head h3::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 121px;
+        height: 4px;
+        background: #000;
+        transform: translateX(-50%);
+      }
+      .txt {
+        margin-top: 30px;
+        font-size: 22px;
+        line-height: 1.8;
+        color: #000;
+        word-wrap: break-word;
+        word-break: keep-all;
+      }
+      .head .con {
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 1280px; */
+        gap: 40px;
+        /* margin-left: 200px; */
+        margin: 0 auto;
+        margin-top: 150px;
+      }
+      .head .con li {
+        width: calc((100% - 40px) / 2);
+        /* flex: 1 1 40%; */
+      }
+      .head .con li img {
+        width: 100%;
+
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 492px) {
+        .head {
+          width: 100%;
+          br {
+            display: none;
+          }
+        }
+        .head h3 {
+          font-size: 20px;
+        }
+        .head h3::after {
+          display: none;
+        }
+        .txt {
+          font-size: 15px;
+        }
+        .head .con {
+          gap: 10px;
+          margin-top: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h3>생활 속에서 함께하는 <br />식품 재조 선도 기업</h3>
+      <div class="txt">
+        <p>
+          신세계푸드는 글로벌 수준의 R&D센터와 식품 제조 인프라를갖추고있습니다.
+          <br />
+          프리미엄 가정 간편식, 베이커리, Fresh Food, 대안식품 등을<br />
+          직접 연구개발 및 생산하며 식품시장을 선도해 가고 있습니다.
+        </p>
+      </div>
+      <ul class="con">
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_hotelCollection.jpg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_vecchiaEnuovo.jpg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_olbaan.jpg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_ywe.jpg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_betterMeat.jpg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_brand.jpg"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://www.shinsegaefood.com/images/business/business_item_recette.jpg"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

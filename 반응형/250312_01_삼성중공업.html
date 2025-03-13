@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .head {
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .concent {
+        display: flex;
+      }
+      .title {
+        margin: 50px 0;
+      }
+      .concent img {
+        width: 100%;
+      }
+      .concent .left {
+        width: 45%;
+        padding-left: 150px;
+      }
+      .concent .right {
+        width: 45%;
+        margin-left: 10%;
+        margin-top: -150px;
+      }
+      @media screen and (max-width: 1080px) {
+        .concent .right {
+          margin-top: 5px;
+        }
+      }
+      @media screen and (max-width: 560px) {
+        .title h1 {
+          font-size: 31.35px;
+        }
+        .concent {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="title">
+        <h1>우리의 약속</h1>
+        <p>
+          급격한 대내외 변화에 대응하기 위해 비전과 목표, 체계 등을 수립하고,
+          <br />
+          지속적인 개선활동을 수행하여 ESG 경영 실천에 대한 의지를 표명하고자
+          합니다.
+        </p>
+      </div>
+      <div class="concent">
+        <div class="left">
+          <div class="con1">
+            <img
+              src="https://www.samsungshi.com/ESG/Kor/images/main/promise_e.jpg"
+              alt=""
+            />
+          </div>
+          <div class="txt">
+            <h1>환경</h1>
+            <p>
+              사업 전반에 있어서 환경을 먼저 생각하고, 기후변화 대응에<br />
+              앞장서겠습니다.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="con2">
+            <img
+              src="https://www.samsungshi.com/ESG/Kor/images/main/promise_s.jpg"
+              alt=""
+            />
+          </div>
+          <div class="txt">
+            <h1>사회적 책임</h1>
+            <p>이래관계자의 가치를 존중하고,사회적 책임을 다하겠습니다.</p>
+          </div>
+          <div class="con3">
+            <img
+              src="https://www.samsungshi.com/ESG/Kor/images/main/promise_g.jpg"
+              alt=""
+            />
+          </div>
+          <div class="txt">
+            <h1>커버넌스</h1>
+            <p>
+              투명하고 건전한 거버넌스를 확립하여 꺠끗한 문화를
+              정착시키겠습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

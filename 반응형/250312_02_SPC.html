@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .head {
+        width: 100%;
+        max-width: 1789px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+      }
+      .spc {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+      }
+      .spc p:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 146px;
+        text-align: center;
+        color: #fff;
+      }
+      .head .spc img {
+        width: 885px;
+        height: 100%;
+        object-fit: cover;
+      }
+      .con1 {
+        flex-direction: column;
+        text-align: center;
+      }
+      .con1 p:nth-child(6) img {
+        width: 432px;
+      }
+      .con2 p:nth-child(1) img {
+        width: 432px;
+      }
+      .con2 p:nth-child(3) img {
+        width: 432px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="spc">
+        <p>
+          <img src="https://www.spc.co.kr/img/front/main/eat.webp" alt="" />
+          <a href="#"
+            ><p>먹고<br />마시고<br />즐기자</p></a
+          >
+        </p>
+      </div>
+      <div class="con1">
+        <h1>BRAND</h1>
+        <p>SPC그룹의 다양한 브랜드를 만나보세요</p>
+        <p>
+          <img
+            src="https://www.spc.co.kr/img/front/icon/icon_prev.svg"
+            alt=""
+          />
+        </p>
+        <p>01/06</p>
+        <p>
+          <img
+            src="https://www.spc.co.kr/img/front/icon/icon_next.svg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.spc.co.kr/files/brand/2024/06/d96a9ce4-a1a7-42a1-836f-fa4580f21f58.jpg"
+            alt=""
+          />
+        </p>
+        <p>파리바게뜨</p>
+      </div>
+      <div class="con2">
+        <p>
+          <img
+            src="https://www.spc.co.kr/files/brand/2024/06/2702a0a8-0b1e-42f7-a055-bd6749696c7c.png"
+            alt=""
+          />
+        </p>
+        <p>삼립</p>
+        <p>
+          <img
+            src="https://www.spc.co.kr/files/brand/2024/06/b59cd9b1-6acb-4deb-8d6a-7999988968bb.jpg"
+            alt=""
+          />
+        </p>
+        <p>베스킨라빈스</p>
+      </div>
+    </div>
+  </body>
+</html>
