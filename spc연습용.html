@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .wrap {
+        width: 100%;
+        padding: 0 54px;
+        box-sizing: border-box;
+        display: flex;
+      }
+      .wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .left {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        gap: 20px;
+      }
+      .wrap .left div {
+        flex: 1;
+      }
+      .wrap .left img {
+        width: 100%;
+      }
+      .right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .right div:nth-child(1) {
+        justify-content: center;
+        text-align: center;
+      }
+      .right div ul {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left">
+        <div>
+          <img src="https://www.spc.co.kr/img/front/main/eat.webp" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <h1>Brand</h1>
+          <p>SPC그룹의 다양한 브랜드를 만나보세요.</p>
+          <ul>
+            <li>
+              <img
+                src="https://www.spc.co.kr/img/front/icon/icon_prev.svg"
+                alt=""
+              />
+            </li>
+            <p>01 / 03</p>
+            <li>
+              <img
+                src="https://www.spc.co.kr/img/front/icon/icon_next.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>
+            <img
+              src="https://www.spc.co.kr/files/brand/2024/06/2702a0a8-0b1e-42f7-a055-bd6749696c7c.png"
+              alt=""
+            />
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.spc.co.kr/files/brand/2024/06/d96a9ce4-a1a7-42a1-836f-fa4580f21f58.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <p>
+            <img
+              src="https://www.spc.co.kr/files/brand/2024/06/b59cd9b1-6acb-4deb-8d6a-7999988968bb.jpg"
+              alt=""
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

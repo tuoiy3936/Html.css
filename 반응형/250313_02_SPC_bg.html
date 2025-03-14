@@ -41,24 +41,75 @@
       .con1 div {
         border-radius: 25px;
         overflow: hidden;
+        padding-top: 100%;
+        position: relative;
+      }
+      .con1 div p {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .con1 div:nth-child(1) {
+        background: url(https://www.spc.co.kr//img/front/main/history.webp)
+          center/cover;
+      }
+      .con1 div:nth-child(2) {
+        background: url(https://www.spc.co.kr/img/front/main/spcway.webp)
+          center/cover;
+        padding-top: 50%;
+      }
+      .con1 div:nth-child(3) {
+        background: url(https://www.spc.co.kr/img/front/main/together.webp)
+          center/cover;
       }
       .con2 {
         display: flex;
         gap: 20px;
+        width: 100%;
       }
       .con2 > div {
         flex: 1;
+      }
+      .con2 .left {
+        width: 100%;
+        overflow: hidden;
+        background: url(https://www.spc.co.kr/img/front/main/eat.webp)
+          center/cover;
+        position: relative;
+      }
+      .con2 .left p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 146px;
+        text-align: center;
+        color: #fff;
       }
       .con2 .right {
         display: grid;
         gap: 20px;
         grid-template-columns: 1fr 1fr;
-        border-radius: 25px;
       }
       .con2 .right > div:first-child {
         height: 100%;
         align-items: center;
         text-align: center;
+      }
+      .con2 .right div:not(:nth-child(1)) {
+      }
+      .con2 .right div:nth-child(2) {
+        background: url(https://www.spc.co.kr/files/brand/2024/06/2702a0a8-0b1e-42f7-a055-bd6749696c7c.png)
+          center/cover;
+      }
+      .con2 .right div:nth-child(3) {
+        background: url(https://www.spc.co.kr/files/brand/2024/06/d96a9ce4-a1a7-42a1-836f-fa4580f21f58.jpg)
+          center/cover;
+      }
+      .con2 .right div:nth-child(4) {
+        background: url(https://www.spc.co.kr/files/brand/2024/06/b59cd9b1-6acb-4deb-8d6a-7999988968bb.jpg)
+          center/cover;
       }
     </style>
   </head>
@@ -72,35 +123,18 @@
       </div>
       <div class="con1">
         <div>
-          <p>
-            <img
-              src="https://www.spc.co.kr//img/front/main/history.webp"
-              alt=""
-            />
-          </p>
+          <p>해리티지</p>
         </div>
         <div>
-          <p>
-            <img
-              src="https://www.spc.co.kr/img/front/main/spcway.webp"
-              alt=""
-            />
-          </p>
+          <p>SPC WAY</p>
         </div>
         <div>
-          <p>
-            <img
-              src="https://www.spc.co.kr/img/front/main/together.webp"
-              alt=""
-            />
-          </p>
+          <p>ESG</p>
         </div>
       </div>
       <div class="con2">
         <div class="left">
-          <p>
-            <img src="./eat copy.webp" alt="" />
-          </p>
+          <p>먹고<br />마시고<br />즐기자</p>
         </div>
         <div class="right">
           <div>
@@ -109,28 +143,13 @@
             <h4>< 01/06 ></h4>
           </div>
           <div>
-            <p>
-              <img
-                src="https://www.spc.co.kr/files/brand/2024/06/2702a0a8-0b1e-42f7-a055-bd6749696c7c.png"
-                alt=""
-              />
-            </p>
+            <p></p>
           </div>
           <div>
-            <p>
-              <img
-                src="https://www.spc.co.kr/files/brand/2024/06/d96a9ce4-a1a7-42a1-836f-fa4580f21f58.jpg"
-                alt=""
-              />
-            </p>
+            <p></p>
           </div>
           <div>
-            <p>
-              <img
-                src="https://www.spc.co.kr/files/brand/2024/06/b59cd9b1-6acb-4deb-8d6a-7999988968bb.jpg"
-                alt=""
-              />
-            </p>
+            <p></p>
           </div>
         </div>
       </div>

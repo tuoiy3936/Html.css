@@ -13,6 +13,31 @@ a {
 body {
   font-family: Arial, 돋움, Dotum, sans-serif;
 }
-.logo {
+.wrap {
+  width: 100%;
+}
+.logo p {
   text-align: center;
+  margin: 20px;
+}
+.menu .nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.menu .nav li a {
+  margin-left: 53px;
+}
+.com {
+  display: flex;
+  position: absolute;
+  left: 32%;
+  top: 25px;
+}
+.com li {
+  position: relative;
+}
+.st {
+  display: flex;
+  position: absolute;
 }
