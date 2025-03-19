@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .only {
+        width: 100%;
+        max-width: 1420px;
+        margin: 0 auto;
+      }
+      .only .con1 img {
+        width: 100%;
+        height: 100%;
+      }
+      .con1 {
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        overflow: hidden;
+        object-fit: cover;
+      }
+      .con1 div {
+        width: 100%;
+        height: 100%;
+        background: #21a100;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .con2 {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+      }
+      .con2 ul {
+        flex: 1;
+      }
+      .con2 ul li:nth-child(2) {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .con2 img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="only">
+      <div class="con1">
+        <p>
+          <img
+            src="https://d10yximrhdxai4.cloudfront.net/news/3dd65217bdf34f638a4f254a167f3b5f.jpg"
+            alt=""
+          />
+        </p>
+        <div>
+          <p>보도자료</p>
+          <p>CJ올리브영,2025 상반기 신입사원 채용</p>
+        </div>
+      </div>
+      <div class="con2">
+        <ul>
+          <li>
+            <img
+              src="https://d10yximrhdxai4.cloudfront.net/main/7b5dbf7a86404f02b8b6b89b2a240764.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <p>보도자료</p>
+            <p>
+              189개 국적 외국인 942만건 결제... <br />
+              올리브영,`글로벌K뷰티 게이트위에`<br />
+              자리매김
+            </p>
+          </li>
+          <li>
+            <img
+              src="https://d10yximrhdxai4.cloudfront.net/news/626a0bc1a6994af99ceaec1ebc110184.jpg"
+              alt=""
+            />
+          </li>
+          <li>
+            <p>보도자료</p>
+            <p>
+              CJ올리브영`K뷰티 혁신 성장`사례,<br />
+              美하버드 경영대학원 수업 교재 채택
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="con3">
+        <ul>
+          <li>
+            <img
+              src="https://d10yximrhdxai4.cloudfront.net/main/cc48516239e44721a7581f99e233691b.jpg"
+              alt=""
+            />
+          </li>
+          <li>
+            <p>테크블로그</p>
+            <p>올리브영 테크블로그 바로가기</p>
+          </li>
+          <li>
+            <img
+              src="https://d10yximrhdxai4.cloudfront.net/main/47c4ba7410c54746a729b9e5fdaf4a8e.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <p>산업지원정보</p>
+            <p>화장품 산업 관련 정부지원사업 모아보기</p>
+          </li>
+          <li>
+            <img
+              src="https://d10yximrhdxai4.cloudfront.net/main/0c6040745df847a4a40377f1dc573a19.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <p>채용 공고</p>
+            <p>올리브영 채용 공고 모아보기</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

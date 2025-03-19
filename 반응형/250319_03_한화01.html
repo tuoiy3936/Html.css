@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: solid;
+        src: url(../Webfonts/fa-solid-900.woff2) format(woff2);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .wrap {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .wrap ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        font-family: solid;
+      }
+      .wrap ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        position: relative;
+      }
+      .wrap ul li p {
+        font-size: 5vw;
+        width: 90%;
+      }
+      .wrap ul li::after {
+        content: "\f2dc";
+      }
+      /* .wrap ul li p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 1px solid #e5e5e5;
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      } */
+      .wrap ul li p::after {
+      }
+      .wrap ul li img {
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 767px) {
+        .wrap ul {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media screen and (max-width: 670px) {
+        .wrap ul {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240422/1713775631479.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713869856042.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713874192354.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713874567467.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713874779700.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713874951317.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="	https://www.hanwha.com/upload/company/20240423/1713871679059.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713875088485.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713875259067.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713875384846.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="	https://www.hanwha.com/upload/company/20240521/1716268151833.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="https://www.hanwha.com/upload/company/20240423/1713875509763.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+        <li>
+          <p>
+            <img
+              src="	https://www.hanwha.com/upload/company/20240423/1713875629246.jpg"
+              alt=""
+            />
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

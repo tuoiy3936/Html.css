@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .txt {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+      .txt ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 35px 0;
+      }
+      .txt ul li {
+        flex: 0 0 30%;
+        max-width: 380px;
+      }
+      .txt ul li > div {
+        width: 100%;
+        padding: 45px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .txt ul li:first-child,
+      .txt ul li:nth-child(2),
+      .txt ul li:nth-child(3) {
+        border-bottom: 4px solid #000;
+      }
+      .txt ul li div p:first-child {
+        font-size: 22px;
+      }
+      .txt ul li div p:nth-child(2) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 840px) {
+        .txt ul li div p:first-child {
+          font-size: 17.6px;
+        }
+        .txt ul li div p:nth-child(2) {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .txt ul li {
+          flex: 0 0 49%;
+        }
+        .txt ul li > div {
+          padding: 24px 0;
+        }
+        .txt ul li:nth-child(4),
+        .txt ul li:nth-child(5),
+        .txt ul li:nth-child(6) {
+          border-bottom: 4px solid #000;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        .txt ul li > div {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="txt">
+      <ul>
+        <li>
+          <div>
+            <p>대표이사</p>
+            <p>최성안</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>창립일</p>
+            <p>1974년8월5일</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>종업원수</p>
+            <p>9,640명</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>자본금</p>
+            <p>8,801억원</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>매출액</p>
+            <p>79,072억원</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>총자산</p>
+            <p>158,920억원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
