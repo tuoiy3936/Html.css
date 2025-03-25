@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      body {
+        font-family: "Pretendard";
+      }
+      .bgf {
+        width: 100%;
+        max-width: 1897px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        word-break: keep-all;
+      }
+      .bgf ul .txt {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+      }
+      .bgf ul .txt p {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .bgf ul .txt h1 {
+        font-size: 40px;
+      }
+      .con div {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .con {
+        width: 100%;
+        max-width: 1440px;
+        height: 600px;
+        margin: 0 auto;
+        background: url(https://www.bgfecomaterials.com/resources/kr/images/company/business/advanced-materials_bg_pc_img.jpg)
+          center/cover no-repeat;
+        color: #fff;
+        box-sizing: border-box;
+        position: relative;
+      }
+      .con div h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      .con div p {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 1141px) {
+        .bgf {
+          padding: 0 24px;
+        }
+        .bgf ul .txt h1 br {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .bgf ul .txt p {
+          font-size: 14px;
+        }
+        .bgf ul .txt h1 {
+          font-size: 22px;
+        }
+        .con {
+          width: 100%;
+          height: 500px;
+        }
+        .con div {
+          top: 10%;
+          transform: translateY(0%);
+          padding: 0 16px;
+          width: 90%;
+        }
+        .con div h3 {
+          font-size: 18px;
+        }
+        .con div p {
+          font-size: 14px;
+        }
+        .con div h3 br {
+          display: none;
+        }
+        .con div p br {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 766px) {
+        .con {
+          width: 100%;
+          padding-top: 110%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgf">
+      <ul>
+        <li class="txt">
+          <p>사업소개</p>
+          <h1>
+            다양한 소재 솔루션으로 고객의 생활을 더 안전하고 풍요롭게 하며<br />
+            환경에 이로운 신소재 개발로 지속 가능한 미래를 만듭니다.
+          </h1>
+        </li>
+      </ul>
+      <ul>
+        <li class="con">
+          <div>
+            <h3>
+              고객의 니즈에 따라 맞춤형 엔지니어링 소재를 개발하여<br />
+              다양한 용도별 요구 성능을 충족 시킵니다.
+            </h3>
+            <p>
+              환경규제 강화로 인한 금속부품의 경량화, 에너지효율 증대,
+              e-Mobility와 ESS 등 신규 Application의<br />
+              확대로 고기능성 엔지니어링 소재의 적용처가 확대되고 있으며, 이에
+              따라 고객들은 보다 더 다양하고<br />
+              정밀한 기능성을 요구하고 있습니다.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .wrap {
+        width: 100%;
+        max-width: 1905px;
+        margin: 0 auto;
+      }
+      .wrap ul {
+        width: 100%;
+      }
+      .wrap ul li .lfet {
+        white-space: nowrap;
+      }
+      .wrap ul li:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrap ul li .right a {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .wrap ul li .right p {
+        white-space: nowrap;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      .wrap ul li .right p:first-child {
+        border: 1px solid #000;
+        color: #000;
+      }
+      .wrap ul li .right p:not(:first-child) {
+        color: #b2b2b2;
+      }
+      .wrap ul li:nth-child(2) {
+        background: url(https://www.cheongrium.com/static/images/spaceinfo/main_space_1.jpg)
+          center/cover;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #fff;
+      }
+      .wrap ul li:nth-child(2) .txt {
+        padding: 60px 50px;
+      }
+      .wrap ul li:nth-child(2) .txt a {
+        color: #fff;
+      }
+      @media screen and (max-width: 1024px) {
+        .wrap {
+          padding: 48px 96px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul>
+        <li>
+          <div class="left">
+            <h1>공간안내</h1>
+            <p>
+              고즈넉한 자연 속 사계절의 아름다운 정취가 있는 청리움의 공간을
+              안내합니다
+            </p>
+          </div>
+          <div class="right">
+            <a href="">
+              <p>강당동</p>
+              <p>연수동</p>
+              <p>카페테리아</p>
+              <p>잔디마당</p>
+              <p>오하산방</p>
+              <p>약초원</p>
+              <p>병당 기도터</p>
+              <p>녹차 · 포도밭</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="txt">
+            <h1>강당동(컨버런스홀 | 세미나A·B)</h1>
+            <p>
+              천혜의 자연 속 프라이빗한 단독 공간으로<br />
+              교육,세미나,연수,행사 등 다채로운 이벤트를 지원합니다.
+            </p>
+
+            <a href="#"><p>VIEW MORE</p></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

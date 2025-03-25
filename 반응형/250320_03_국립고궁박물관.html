@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: solid;
+        src: url(../Webfonts/fa-solid-900.woff2) format(woff2);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .museum {
+        padding: 0 30px;
+        box-sizing: border-box;
+      }
+      .museum ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+      }
+      .museum ul li {
+        display: flex;
+        position: relative;
+        flex: 1;
+        padding: 1.3vw;
+      }
+      .museum ul li .txt {
+        position: relative;
+      }
+      .museum ul li a .txt p:first-child::after {
+        content: "\f061";
+        font-family: solid;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        width: 1.6vw;
+        height: 100%;
+      }
+      .museum ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 5px solid transparent;
+        border-image: linear-gradient(
+            135deg,
+            rgba(255, 254, 248, 0.8) 0%,
+            rgba(155, 155, 155, 0.4) 20%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(155, 155, 155, 0.4) 100%
+          )
+          1;
+        z-index: 1;
+      }
+      .museum ul li div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .museum ul li div:nth-child(2) {
+        width: 100%;
+        height: 100%;
+      }
+      .museum ul li:nth-child(2n) a {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .museum ul li:nth-child(2) div:nth-child(2) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .museum ul li:nth-child(2) div:nth-child(2) p:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 80%;
+      }
+      @media screen and (max-width: 1200px) {
+        .museum ul li {
+          flex: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="museum">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="txt">
+              <p>상설전시</p>
+              <p>Permanent Exhibition</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/cmmn/file/imageSrc.do?atchFileId=c34a683dacb040c79c4fd6a44f6cb140&fileSn=1"
+                  alt=""
+                />
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="txt">
+              <p>특별전시</p>
+              <p>Special Exhibition</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/cmmn/file/imageSrc.do?atchFileId=70cff0eaba664585877fcd67cc6f63fd&fileSn=1"
+                  alt=""
+                />
+              </p>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/html/onlinemuseum/resources/images/main/main_vr_img_2.png"
+                  alt=""
+                />
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="txt">
+              <p>멀티미디어북</p>
+              <p>Multimedia Book</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/cmmn/file/imageSrc.do?atchFileId=211b47eead9a4e2fa0fe1b7260f2a139&fileSn=1"
+                  alt=""
+                />
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="txt">
+              <p>소장품 100선</p>
+              <p>100 Highlights</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/cmmn/file/imageSrc.do?atchFileId=36dab1421b68485590a7dc4c1ce549dc&fileSn=1"
+                  alt=""
+                />
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="txt">
+              <p>조선왕실, 어보</p>
+              <p>Permanent Exhibition</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/cmmn/file/imageSrc.do?atchFileId=4c9555d62e3343bb89ae0c91f44dd249&fileSn=1"
+                  alt=""
+                />
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="txt">
+              <p>게임</p>
+              <p>lnteractive Game</p>
+            </div>
+            <div>
+              <p>
+                <img
+                  src="https://online.gogung.go.kr/cmmn/file/imageSrc.do?atchFileId=8ca5c26a41de4a3a87f84d8b6f9015b9&fileSn=1"
+                  alt=""
+                />
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
