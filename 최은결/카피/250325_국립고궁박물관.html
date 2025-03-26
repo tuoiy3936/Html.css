@@ -25,46 +25,41 @@
         color: #333;
       }
       body.bg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      body.bg::before {
         content: "";
         position: fixed;
         background: url(https://online.gogung.go.kr/html/onlinemuseum/resources/images/main/main_background.jpg);
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      .bg .head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 30px 40px;
+        z-index: -1;
       }
       .head .logo {
-        text-align: center;
-      }
-      .head .menu {
         display: flex;
+      }
+      .head .con ul {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body class="bg">
     <div class="head">
-      <ul class="logo">
-        <li>
-          <a href="https://online.gogung.go.kr/"
-            >국립고궁박물관
-            <p>o n l i n e m u s e u m</p>
-          </a>
-        </li>
-      </ul>
-      <ul class="menu">
-        <li>
-          <a href=""
-            ><img
-              src="https://online.gogung.go.kr/html/onlinemuseum/resources/images/common/ico-menu.svg"
-              alt=""
-          /></a>
-        </li>
+      <ul>
+        <div class="logo">
+          <li>
+            <a href="https://online.gogung.go.kr/"
+              >국립고궁박물관
+              <p>o n l i n e m u s e u m</p>
+            </a>
+          </li>
+          <li>
+            <span></span>
+          </li>
+        </div>
       </ul>
       <div class="con">
         <ul>
