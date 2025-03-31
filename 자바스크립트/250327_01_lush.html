@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .lush {
+        width: 100%;
+        height: 720px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .lush.bg1 {
+        background-image: url(https://weare.lush.co.kr/images/main_value01.jpg);
+      }
+      .lush.bg2 {
+        background-image: url(https://weare.lush.co.kr/images/main_value02.jpg);
+      }
+      .lush.bg3 {
+        background-image: url(https://weare.lush.co.kr/images/main_value03.jpg);
+      }
+      .lush.bg4 {
+        background-image: url(https://weare.lush.co.kr/images/main_value04.jpg);
+      }
+      .lush.bg5 {
+        background-image: url(https://weare.lush.co.kr/images/main_value06.jpg);
+      }
+      .lush.bg6 {
+        background-image: url(https://weare.lush.co.kr/images/main_value05.jpg);
+      }
+      .lush ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+      }
+      .lush ul li {
+        flex: 0 0 30%;
+      }
+      .lush ul li a {
+        display: block;
+        box-sizing: border-box;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #000;
+        padding-top: 100px;
+        color: #fff;
+      }
+      .lush ul li a.on {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lush">
+      <ul>
+        <li>
+          <a href="#">
+            <p>NAKED <br />PRODUCTS</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><p>FIGHTING <br />ANIMAL TESTING</p></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <p>FRESH <br />COSMETICS</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>100% <br />VEGETARIAN</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>ETHICAL <br />BUYING</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>HANDMADE <br />WITH LOVE</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      document.querySelector(".lush").classList.add("bg1");
+      document.querySelectorAll(".lush ul li").forEach(function (v, k) {});
+    </script>
+  </body>
+</html>
