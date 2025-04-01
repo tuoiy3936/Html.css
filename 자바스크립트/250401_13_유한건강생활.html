@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .top {
+        text-align: center;
+      }
+      .top h1 {
+        margin: 50px 0;
+      }
+      .top p {
+        font-size: 24px;
+      }
+      .con .topImage {
+        width: 1200px;
+        height: 210px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .con .topImage .mask {
+        position: absolute;
+        width: 1200px;
+        height: 210px;
+        left: 0;
+        top: 0;
+      }
+      .con .topImage .mask .zoom_circle {
+        background-size: 1200px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        clip-path: circle(0%);
+        border-radius: 30px;
+      }
+      .con .topImage .mask .zoom_circle.on {
+        clip-path: circle(100%);
+        transition: clip-path 1s 800ms ease-out;
+      }
+      .con .topImage .mask .zoom_circle:first-child {
+        background: url(https://www.yuhancare.com/data/yuhancare/inc/img_new/main/text_to_img1.jpg);
+      }
+      .con .topImage .mask .zoom_circle:nth-child(2) {
+        background: url(https://www.yuhancare.com/data/yuhancare/inc/img_new/main/text_to_img2.jpg);
+      }
+      .con .topImage .mask .zoom_circle:nth-child(3) {
+        background: url(https://www.yuhancare.com/data/yuhancare/inc/img_new/main/text_to_img3.jpg);
+      }
+      .con .topImage .item li {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 190px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 210px;
+        color: transparent;
+        transition: 0.5s;
+        opacity: 0;
+      }
+      .con .topImage .item li.on {
+        opacity: 1;
+      }
+      .con .topImage .item li:first-child {
+        background: url(https://www.yuhancare.com/data/yuhancare/inc/img_new/main/text_to_img1.jpg);
+        background-clip: text;
+      }
+      .con .topImage .item li:nth-child(2) {
+        background: url(https://www.yuhancare.com/data/yuhancare/inc/img_new/main/text_to_img2.jpg);
+        background-clip: text;
+      }
+      .con .topImage .item li:nth-child(3) {
+        background: url(https://www.yuhancare.com/data/yuhancare/inc/img_new/main/text_to_img3.jpg);
+        background-clip: text;
+      }
+      .con .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 50px 0;
+      }
+      .con .btn li {
+        cursor: pointer;
+        text-align: center;
+        width: 180px;
+        height: 48px;
+        border: 1px solid #181818;
+        box-sizing: border-box;
+        border-radius: 30px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .con .btn li.on {
+        color: #fff;
+        background-color: #181818;
+      }
+      .con .txt {
+        position: relative;
+      }
+      .con .txt li {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+      .con .txt li p {
+        text-align: center;
+      }
+      .con .txt li.on {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <h1>Redefine the Origin</h1>
+      <p>
+        천연물의 잠재력을 연구하고 <br />
+        건강 그 이상의가치로 연결하고자 합니다.
+      </p>
+    </div>
+    <div class="con">
+      <div class="topImage">
+        <div class="mask">
+          <span class="zoom_circle"></span>
+          <span class="zoom_circle"></span>
+          <span class="zoom_circle"></span>
+        </div>
+        <ul class="item">
+          <li>YUHANCARE</li>
+          <li>YUHANCARE</li>
+          <li>YUHANCARE</li>
+        </ul>
+      </div>
+      <ul class="btn">
+        <li>기업소개</li>
+        <li>사업소개</li>
+        <li>기업문화</li>
+      </ul>
+      <ul class="txt">
+        <li>
+          <p>
+            천연물의 과학적 연구를 토대로 고객의 삶에 새로운 의식과 <br />
+            가치 있는 경험을 전하는 유한건강생활을 소개합니다.
+          </p>
+        </li>
+        <li>
+          <p>
+            먹고 입고 바르는 라이프스타일의 모든 부분에서<br />
+            진정성 있는 가치와 본질에 집중하여 연구 활동을 이어 갑니다.
+          </p>
+        </li>
+        <li>
+          <p>
+            우리는 브랜드 원칙에 공감하며 행동으로 실천합니다. <br />
+            유한건강생활의 문화와 사고의 공간을 소개합니다.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      document
+        .querySelectorAll(".con .topImage .item li")[0]
+        .classList.add("on");
+      document
+        .querySelectorAll(" .con .topImage .item li")[0]
+        .classList.add("on");
+      document.querySelectorAll(".con .btn li")[0].classList.add("on");
+      document.querySelectorAll(".con .txt li")[0].classList.add("on");
+      function my() {
+        document
+          .querySelectorAll(".con .topImage .mask .zoom_circle")
+          .forEach(function (v, k) {
+            v.classList.remove("on");
+          });
+        document
+          .querySelectorAll(".con .topImage .item li")
+          .forEach(function (v, k) {
+            v.classList.remove("on");
+          });
+        document.querySelectorAll(".con .btn li").forEach(function (v, k) {
+          v.classList.remove("on");
+        });
+        document.querySelectorAll(".con .txt li").forEach(function (v, k) {
+          v.classList.remove("on");
+        });
+      }
+      document.querySelectorAll(".con .btn li").forEach(function (v, k) {
+        v.onclick = function () {
+          my();
+          document
+            .querySelectorAll(".con .topImage .item li")
+            [k].classList.add("on");
+          document
+            .querySelectorAll(".con .topImage .mask .zoom_circle")
+            [k].classList.add("on");
+          document.querySelectorAll(".con .btn li")[k].classList.add("on");
+          document.querySelectorAll(".con .txt li")[k].classList.add("on");
+        };
+      });
+      window.onload = function () {
+        setTimeout(function () {
+          document.querySelectorAll(".con .btn li")[0].click();
+        }, 1000);
+      };
+    </script>
+  </body>
+</html>
