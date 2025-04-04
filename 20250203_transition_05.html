@@ -10,47 +10,92 @@
         margin: 0;
         padding: 0;
       }
+      .con {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+      }
       ul {
         list-style: none;
         width: 1190px;
         margin: 500px auto;
       }
       ul li {
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: wrap;
+        width: 374px;
+        float: left;
+        cursor: pointer;
+        margin-right: calc((100% - (374px * 3)) / 2);
+        transition: 0.5s;
+      }
+      ul li:nth-child(2) {
+        margin-top: -100px;
+      }
+      ul li:last-child {
+        margin-right: 0;
       }
       ul li img {
-        width: 380px;
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: wrap;
+        width: 100%;
+        object-fit: cover;
+      }
+      ul li:hover {
+        margin-top: -50px;
+      }
+      ul li:nth-child(2):hover {
+        margin-top: -150px;
       }
     </style>
   </head>
   <body>
+    <div class="con"></div>
     <ul>
       <li>
-        <p>자코모 소개<br />About</p>
-        <img
-          src="https://www.jakomosofa.com/inc/img/main/info_sect_1.jpg"
-          alt="info_sect_1"
-        />
+        <div class="txt">
+          <p>자코모 소개</p>
+          <p>About</p>
+        </div>
+        <p>
+          <img
+            src="	https://www.jakomosofa.com/inc/img/main/info_sect_1.jpg"
+            alt="img"
+          />
+        </p>
       </li>
       <li>
-        <p>자코모 이야기<br />Story</p>
-        <img
-          src="https://www.jakomosofa.com/inc/img/main/info_sect_2.jpg"
-          alt="info_sect_1"
-        />
+        <div class="txt">
+          <p>자코모 이야기</p>
+          <p>Story</p>
+        </div>
+        <p>
+          <img
+            src="	https://www.jakomosofa.com/inc/img/main/info_sect_2.jpg"
+            alt="img"
+          />
+        </p>
       </li>
       <li>
-        <p>자코모 제품 철학<br />Philosophy</p>
-        <img
-          src="https://www.jakomosofa.com/inc/img/main/info_sect_3.jpg"
-          alt="info_sect_1"
-        />
+        <div class="txt">
+          <p>자코모 제품 철학</p>
+          <p>Philosophy</p>
+        </div>
+        <p>
+          <img
+            src="	https://www.jakomosofa.com/inc/img/main/info_sect_3.jpg"
+            alt="img"
+          />
+        </p>
       </li>
     </ul>
+    <script>
+      document.querySelector("ul").onmousemove = function (e) {
+        let x = e.clientX;
+        let y = e.clientY;
+        document.querySelector(".con").style.left = x + "px";
+        document.querySelector(".con").style.top = y + "px";
+      };
+    </script>
   </body>
 </html>

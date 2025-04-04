@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .taekwang {
+        width: 100%;
+        max-width: 1912px;
+        height: 100%;
+        position: relative;
+      }
+      .taekwang .con video {
+        width: 100%;
+        object-fit: cover;
+      }
+      .taekwang .wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+      }
+      .taekwang .wrap .busi ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="taekwang">
+      <div class="con">
+        <video autoplay muted loop>
+          <source
+            src="https://www.taekwanggroup.co.kr/UPLOAD/MAIN_MOVIE_MO/FILE20250310181302F9q8l.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="wrap">
+        <div class="logo">
+          <img
+            src="https://www.taekwanggroup.co.kr/resources/front/assets/img/ex/header-d0329d3d/header_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="busi">
+          <ul>
+            <li><p>Business Groups</p></li>
+            <li><p>KR</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><p>태광그룹</p></li>
+          <li><p>사업분야</p></li>
+          <li><p>지속가능경영</p></li>
+          <li><p>홍보센터</p></li>
+          <li><p>인재채용</p></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

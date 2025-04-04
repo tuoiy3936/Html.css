@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .wrap {
+        width: 100%;
+        max-width: 1210px;
+        margin: 0 auto;
+        color: #d1a050;
+      }
+      .wrap h1 {
+        font-size: 42px;
+      }
+      .wrap h1:nth-child(2) {
+        margin: 80px 0 20px;
+      }
+      .wrap ul li {
+        border-bottom: 1px solid #d1a050;
+        border-top: 1px solid #d1a050;
+        padding: 15px 20px;
+        cursor: pointer;
+      }
+      .wrap ul li p {
+        color: #d1a050;
+        position: relative;
+        font-size: 24px;
+        padding: 0 0 0 20px;
+      }
+      .wrap ul li p::after {
+        content: "+";
+        position: absolute;
+        left: 0;
+        top: 5%;
+        width: 0;
+        height: 0;
+        background: #d1a050;
+        font-size: 24px;
+      }
+      /* .wrap ul li p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        background: #d1a050;
+      } */
+      .wrap ul li p.on::after {
+        transform: rotate(45deg);
+      }
+      .wrap ul li div {
+        opacity: 0;
+        height: 0;
+      }
+      .wrap ul li div.on {
+        opacity: 1;
+        padding: 70px 40px 80px;
+        height: auto;
+      }
+      .wrap ul li div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .wrap ul li:nth-child(3) {
+        position: relative;
+      }
+      .wrap ul li a img {
+        width: 100%;
+        max-width: 20px;
+        object-fit: cover;
+        position: absolute;
+        left: 17%;
+        top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>RETAIL</h1>
+      <h1>Slices - Oat Base</h1>
+      <ul>
+        <li>
+          <p>AMERICAN</p>
+          <div>
+            <img
+              src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-OATBASE-AMERICAN-pc.jpg"
+              alt=""
+            />
+          </div>
+        </li>
+        <li>
+          <p>CHEDDAR</p>
+          <div>
+            <img
+              src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-OATBASE-CHEDDAR-pc.jpg"
+              alt=""
+            />
+          </div>
+        </li>
+        <li>
+          <p>PEPPER JACK</p>
+          <a href="#"
+            ><img
+              src="https://www.armoredfresh.com/img/webstaurantstore-w-mark.png"
+              alt=""
+          /></a>
+          <div>
+            <img
+              src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-OATBASE-PEPPERJACK-pc.jpg"
+              alt=""
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script>
+      document.querySelectorAll(".wrap ul li").forEach(function (v, k) {
+        v.querySelector("div").style.display = "none";
+      });
+      document.querySelectorAll(".wrap ul li").forEach(function (v, k) {
+        v.onclick = function () {
+          let bool = this.querySelector("div").style.display;
+          if (bool == "none") {
+            this.querySelector("p").classList.add("on");
+            this.querySelector("div").classList.add("on");
+            this.querySelector("div").style.display = "block";
+          } else {
+            this.querySelector("p").classList.remove("on");
+            this.querySelector("div").classList.remove("on");
+            this.querySelector("div").style.display = "none";
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
