@@ -32,6 +32,10 @@
         position: absolute;
         left: 0;
         top: 0;
+        opacity: 0;
+      }
+      .lotte ul li.on {
+        opacity: 1;
       }
       .lotte ul li img {
         width: 100%;
@@ -159,5 +163,22 @@
         <a href="#">LEARN MORE</a>
       </div>
     </div>
+    <script>
+      document.querySelectorAll(".lotte ul li")[0].classList.add("on");
+      document.querySelectorAll(".txt div p")[0].classList.add("on");
+      document.querySelectorAll(".txt div a")[0].classList.add("on");
+      document.querySelectorAll(".txt div").forEach(function (v, k) {
+        v.onmouseenter = function () {
+          document.querySelectorAll(".lotte ul li")[k].classList.add("on");
+          v.querySelector("p").style.display = "block";
+          v.querySelector("a").style.display = "block";
+        };
+        v.onmonuseleave = function () {
+          document.querySelectorAll(".lotte ul li")[k].classList.remove("on");
+          v.querySelector("p").style.display = "none";
+          v.querySelector("a").style.display = "none";
+        };
+      });
+    </script>
   </body>
 </html>
