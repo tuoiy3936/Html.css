@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      body {
+        width: 100%;
+        background: #fefef2;
+      }
+      header {
+        width: 100%;
+        position: fixed;
+        padding: 20px 0;
+        left: 0;
+        top: 0;
+      }
+      .head {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: calc(100% - 80px);
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+      }
+      .head .message {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .head div a img {
+        margin: 0 auto;
+        display: block;
+        height: 8vmin;
+      }
+      .lmt {
+        width: calc(100% - 80px);
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        height: 55%;
+        background-image: url(https://www.bekseju.com/images/mainbg.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .lmt img {
+        width: auto;
+        height: 64vmin;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      section {
+        width: 100%;
+        height: 80vh;
+        margin-top: 15vh;
+        width: calc(100% - 80px);
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+      }
+      section::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(https://www.bekseju.com/images/line-g.png);
+        width: 100%;
+        height: 2px;
+      }
+      section .scroll {
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translateX(-50%);
+      }
+      section .scroll h6 {
+        background-image: url(https://www.bekseju.com/images/ico-arrow-d.svg);
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: center bottom;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <ul class="message">
+          <li>Korean Traditional Wine</li>
+          <li>BEKSEJU</li>
+        </ul>
+        <div>
+          <a href="#"
+            ><img src="https://www.bekseju.com/images/logo.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="lmt">
+        <img src="https://www.bekseju.com/images/img-bottle.png" alt="" />
+      </div>
+      <div class="scroll">
+        <h6>Scroll</h6>
+        <span></span>
+      </div>
+    </section>
+    <script></script>
+  </body>
+</html>

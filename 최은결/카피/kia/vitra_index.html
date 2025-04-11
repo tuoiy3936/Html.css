@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/cssstyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="logo">
+          <a href="#"> </a>
+        </div>
+        <div class="left">
+          <ul>
+            <li><a href="#">차량</a></li>
+            <li><a href="#">구매</a></li>
+            <li><a href="#">체험</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">Discover kia</a></li>
+            <li>
+              <a href="#"><div>PBV</div></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <button type="button">
+                <a href="#">KR</a>
+              </button>
+            </li>
+            <div>
+              <li><a href="#">KR</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">CN</a></li>
+            </div>
+            <li>
+              <button type="button"><a href="#">통합검색</a></button>
+            </li>
+            <li>
+              <button type="button"><a href="#">로그인</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202503/kv_the-kia-ev4_0305_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202502/kv_the-kia-pv5_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ev9-gt/my/kv_the_kia_ev9-gt_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202502/kv_the_kia_tasman_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202411/kv_the_new_sportage_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202411/kv_the_2025_k5_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202408/kv_flagship_store_pc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202310/kv_used_car_pc.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202405/kv_rental_pc_240527.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
