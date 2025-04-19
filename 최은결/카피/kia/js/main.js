@@ -74,7 +74,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-var swiper = new Swiper1(".mySwiper1", {
+var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 1,
   spaceBetween: 10,
   pagination: {
