@@ -325,10 +325,12 @@ body {
   flex: 1;
   padding: 24px;
   position: relative;
+  cursor: pointer;
 }
 .pdp .link:hover {
   background-color: #05141f;
   color: #fff;
+  transition: all 1s;
 }
 .pdp .pdplinktit {
   display: flex;
@@ -367,7 +369,10 @@ h1 {
   object-fit: cover;
 }
 .NEws3 {
+  margin: 60px auto;
   width: 100%;
   max-width: 1344px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
