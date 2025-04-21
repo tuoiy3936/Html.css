@@ -197,7 +197,14 @@ body {
   transition: 1s;
   transition-delay: 0.5s;
 }
-
+#main .txt > div h5 {
+  font-size: 18px;
+  color: #fff;
+}
+#main .txt > div h1 {
+  font-size: 52px;
+  color: #fff;
+}
 #main .txt .con {
   width: 100%;
   margin-top: 20px;
@@ -240,6 +247,9 @@ body {
   margin: 0 20px;
   cursor: pointer;
 }
+.con2 > ul li:first-child {
+  border-bottom: 3px solid #000;
+}
 .main2 {
   margin: 0 auto;
   max-width: 1344px;
@@ -268,6 +278,7 @@ body {
 }
 .visual .sub .middle li div:last-child {
   text-align: right;
+  margin-bottom: 20px;
 }
 .visual .sub .top li {
   text-align: left;
@@ -299,6 +310,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: end;
+  padding-top: 24px;
+  border-top: 1px solid #d2d2d2;
+  margin-bottom: 48px;
 }
 .visual .sub .foop {
   text-align: center;
@@ -312,25 +326,53 @@ body {
   background: #37434b;
   color: #fff;
 }
+.visual .sub .foop a:hover {
+  transition: 2s ease-in-out;
+  opacity: 0.8;
+}
+.best-txt {
+  color: #697278;
+  margin-top: 36px;
+  z-index: 2;
+}
+.main2 .swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 1) !important;
+}
+.main2 .swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid #000;
+  opacity: 1;
+}
 .pdp {
   margin: 0 auto;
   width: 100%;
   max-width: 1344px;
   display: flex;
   gap: 24px;
+  padding: 120px 0;
 }
 .pdp .link {
-  height: 244px;
+  height: 196px;
   border: 1px solid #37434b;
   flex: 1;
   padding: 24px;
   position: relative;
   cursor: pointer;
+  position: relative;
 }
 .pdp .link:hover {
   background-color: #05141f;
   color: #fff;
   transition: all 1s;
+}
+.pdp .link .pdplink img {
+  width: 32px;
+  height: 32px;
+}
+.pdp .link:hover .pdp-icon {
+  display: none;
+  transition: 3s ease-in;
+  transition-delay: 4;
 }
 .pdp .pdplinktit {
   display: flex;
@@ -345,7 +387,7 @@ h1 {
 }
 .news {
   display: flex;
-  margin: 0 auto;
+  margin: 64px auto 80px;
   width: 100%;
   max-width: 1344px;
 }
@@ -353,7 +395,7 @@ h1 {
   background-color: #697278;
   width: 50%;
   position: relative;
-  padding: 24px;
+  padding: 80px 64px;
 }
 .News1 a {
   border: 1px solid #fff;
@@ -369,10 +411,116 @@ h1 {
   object-fit: cover;
 }
 .NEws3 {
-  margin: 60px auto;
+  margin: 80px auto 120px;
   width: 100%;
   max-width: 1344px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer {
+  width: 100%;
+  background: #05141f;
+}
+footer .foot-logo {
+  width: 102px;
+  padding: 64px 0 0 64px;
+}
+#foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 64px 40px;
+}
+.foot-con ul li,
+.foot-link ul li {
+  margin-top: 24px;
+}
+
+.foot-con ul li a {
+  color: #fff;
+}
+
+.foot-link ul li a {
+  color: #697279;
+}
+.foot-con2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 64px 24px;
+}
+.foot-inner ul {
+  display: flex;
+}
+.foot-inner ul li a {
+  color: #fff;
+}
+.foot-inner2 {
+  display: flex;
+}
+.foot-inner2 p a {
+  color: #fff;
+}
+.drop {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #010e18;
+  width: 270px;
+  padding: 16px 24px;
+  color: #fff;
+  background: #010e18;
+  text-align: left;
+  background-image: url(https://www.kia.com/content/dam/kwp/descriptive/ic_arow_donw_w.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.dropdown {
+  bottom: 47px;
+  max-height: 270px;
+  display: none;
+}
+.dropdown ul {
+  border: 1px solid #37434b;
+}
+.dropdown ul li a {
+  color: #f8f8f8;
+  width: 100%;
+  display: block;
+  padding: 10px 24px;
+  font-size: 14px;
+}
+.foot-con3 {
+  padding: 40px 66px 24px;
+}
+.foot-inner3 {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-inner3 p {
+  color: #697279;
+  font-size: 14px;
+}
+.right {
+  display: flex;
+}
+.right p {
+  margin-left: 20px;
+}
+.foot-inner4 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: top;
+  margin-top: 30px;
+}
+.foot-inner4 ul li span {
+  display: inline-block;
+  color: #697279;
+  font-size: 12px;
 }

@@ -96,6 +96,7 @@ var swiper = new Swiper(".mySwiper1", {
     },
   },
 });
+
 AOS.init({
   duration: 1000,
   delay: 500,

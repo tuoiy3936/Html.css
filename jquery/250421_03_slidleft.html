@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 300px;
+        width: 300px;
+      }
+      p {
+        width: 100%;
+        height: 100%;
+        background: #ccc;
+        transition: 1s;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(function () {
+        $("a:first-of-type").mouseenter(function (e) {
+          e.preventDefault();
+          $("p").width(0);
+        });
+        $("a:nth-of-type(2)").click(function (e) {
+          e.preventDefault();
+          $("p").width("100%");
+        });
+        $("a:nth-of-type(3)").click(function (e) {
+          e.preventDefault();
+          let wd = $("p").width();
+          console.log(wd);
+          if (wd > 0) {
+            $("p").width(0);
+          } else $("p").width("100%");
+        });
+        $("a:nth-of-type(4)").click(function (e) {
+          e.preventDefault();
+          $("p").fadeTo(1000, 0.5, "linear");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p></p>
+    </div>
+    <a href="#">slidleft</a>
+    <a href="#">slidright</a>
+    <a href="#">slidtoggle</a>
+  </body>
+</html>
