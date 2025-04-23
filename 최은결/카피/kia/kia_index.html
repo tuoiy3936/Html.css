@@ -11,6 +11,23 @@
     />
     <link rel="stylesheet" href="./css/cssstyle.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".dropbtn").click(function (e) {
+          e.stopPropagation();
+          $(".dropdown").slideToggle(200);
+        });
+
+        $(document).click(function () {
+          $(".dropdown").slideUp(200);
+        });
+
+        $(".dropdown").click(function (e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -687,33 +704,37 @@
             <li><a href="#">홈</a></li>
           </ul>
         </div>
-        <div class="foot-inner2">
-          <p>
-            <img
-              src="https://www.kia.com/content/dam/kwp/descriptive/global_footer_kor.svg"
-              alt=""
-            />
-          </p>
-          <p><a href="#">한국</a></p>
-        </div>
-        <div class="drop">
-          <button type="button" class="dropbtn">Family Site</button>
-          <div class="dropdown">
-            <ul>
-              <li><a href="#">현대자동차그룹</a></li>
-              <li><a href="#">브랜드</a></li>
-              <li><a href="#">기아멤버스</a></li>
-              <li><a href="#">기아 드라이빙 아카데미</a></li>
-              <li><a href="#">인재 채용</a></li>
-              <li><a href="#">IR</a></li>
-              <li><a href="#">동반성장</a></li>
-              <li><a href="#">지속가능경영</a></li>
-              <li><a href="#">글로벌경영연구소</a></li>
-              <li><a href="#">기아 타이거즈</a></li>
-              <li><a href="#">기아군용</a></li>
-              <li><a href="#">프라이버시 센터</a></li>
-              <li><a href="#">Kia Connect</a></li>
-            </ul>
+        <div class="foot-inner1">
+          <div class="foot-inner2">
+            <div>
+              <p>
+                <img
+                  src="https://www.kia.com/content/dam/kwp/descriptive/global_footer_kor.svg"
+                  alt=""
+                />
+              </p>
+              <p><a href="#">한국</a></p>
+            </div>
+          </div>
+          <div class="drop">
+            <button type="button" class="dropbtn">Family Site</button>
+            <div class="dropdown">
+              <ul>
+                <li><a href="#">현대자동차그룹</a></li>
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">기아멤버스</a></li>
+                <li><a href="#">기아 드라이빙 아카데미</a></li>
+                <li><a href="#">인재 채용</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">동반성장</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">글로벌경영연구소</a></li>
+                <li><a href="#">기아 타이거즈</a></li>
+                <li><a href="#">기아군용</a></li>
+                <li><a href="#">프라이버시 센터</a></li>
+                <li><a href="#">Kia Connect</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
