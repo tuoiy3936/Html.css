@@ -21,6 +21,7 @@ body {
   font-family: "Pretendard-Regular";
 }
 header {
+  width: 100%;
   max-width: 1480px;
   margin: 0 auto;
 }
@@ -28,7 +29,10 @@ header {
   display: flex;
   position: fixed;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 .head .logo {
   width: 250px;
@@ -38,6 +42,9 @@ header {
 }
 .head .menu ul {
   display: flex;
+  justify-content: space-between;
+}
+.head .menu ul li {
 }
 .submenu {
   display: flex;
