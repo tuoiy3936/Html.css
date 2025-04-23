@@ -395,7 +395,8 @@ h1 {
   background-color: #697278;
   width: 50%;
   position: relative;
-  padding: 80px 64px;
+  padding: 80px 40px;
+  box-sizing: border-box;
 }
 .News1 a {
   border: 1px solid #fff;
@@ -417,6 +418,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 footer {
   width: 100%;
@@ -453,19 +455,25 @@ footer .foot-logo {
 }
 .foot-inner ul {
   display: flex;
+  align-items: center;
 }
 .foot-inner ul li a {
   color: #fff;
 }
-.foot-inner2 {
+.foot-inner1 {
   display: flex;
+  align-items: center;
 }
-.foot-inner2 p a {
+.foot-inner1 p a {
   color: #fff;
+}
+.foot-inner2 > div {
+  display: flex;
 }
 .drop {
   position: relative;
   display: inline-block;
+  margin-left: 40px;
 }
 .dropbtn {
   font-size: 14px;
@@ -481,8 +489,13 @@ footer .foot-logo {
   background-position: right;
 }
 .dropdown {
-  bottom: 47px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
   max-height: 270px;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: none;
 }
 .dropdown ul {
@@ -497,6 +510,7 @@ footer .foot-logo {
 }
 .foot-con3 {
   padding: 40px 66px 24px;
+  background-color: #010e18;
 }
 .foot-inner3 {
   display: flex;
@@ -514,10 +528,14 @@ footer .foot-logo {
 }
 .foot-inner4 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 50px;
   align-items: center;
-  vertical-align: top;
+  vertical-align: middle;
   margin-top: 30px;
+}
+.foot-inner4 ul li img {
+  vertical-align: top;
 }
 .foot-inner4 ul li span {
   display: inline-block;
