@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>나뭇잎 애니메이션</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #e0f7fa;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="leafCanvas"></canvas>
+
+    <script>
+      const canvas = document.getElementById("leafCanvas");
+      const ctx = canvas.getContext("2d");
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const leafImage = new Image();
+      leafImage.src = "./leaves.png"; // 나뭇잎 이미지 URL
+
+      const leaves = [];
+
+      class Leaf {
+        constructor() {
+          this.reset();
+        }
+
+        reset() {
+          this.x = canvas.width + Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = 20 + Math.random() * 30;
+          this.speedX = 1 + Math.random() * 2;
+          this.speedY = -0.5 + Math.random();
+          this.angle = Math.random() * Math.PI * 2;
+          this.angularSpeed = -0.02 + Math.random() * 0.04;
+        }
+
+        update() {
+          this.x -= this.speedX;
+          this.y += this.speedY;
+          this.angle += this.angularSpeed;
+
+          if (
+            this.x < -this.size ||
+            this.y > canvas.height ||
+            this.y < -this.size
+          ) {
+            this.reset();
+          }
+        }
+
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate(this.angle);
+          ctx.drawImage(
+            leafImage,
+            -this.size / 2,
+            -this.size / 2,
+            this.size,
+            this.size
+          );
+          ctx.restore();
+        }
+      }
+
+      for (let i = 0; i < 30; i++) {
+        leaves.push(new Leaf());
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let leaf of leaves) {
+          leaf.update();
+          leaf.draw();
+        }
+        requestAnimationFrame(animate);
+      }
+
+      leafImage.onload = animate;
+      window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+    </script>
+  </body>
+</html>
