@@ -22,15 +22,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/jquery.fullPage.js"></script>
     <script>
-      $(document).ready(function () {
-        $("#fullpage").fullpage({
-          navigation: true,
-          navigationPosition: "left",
-        });
-      });
+      $(document).ready(function () {});
     </script>
   </head>
   <body>
@@ -142,7 +138,7 @@
       </div>
     </header>
     <div id="fullpage">
-      <div class="section" id="section0">
+      <div class="section" id="section01">
         <div id="swiper-wrap">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -179,17 +175,269 @@
             </div>
           </div>
         </div>
-        <div class="btn-wrap">
-          <div class="btn">
-            <h4>간편예약</h4>
+        <div class="wrap">
+          <div class="btn-wrap">
+            <div>
+              <div>
+                <h4>간편예약</h4>
+              </div>
+              <div class="text1">
+                <input
+                  type="성함을 입력해주세요"
+                  placeholder="성함을 입력해주세요"
+                />
+                <h3><a href="#">진료예약</a></h3>
+              </div>
+              <div class="text2">
+                <input type="number" placeholder="연락처를 입력해주세요" />
+                <h3><a href="#">건강검진예약</a></h3>
+              </div>
+              <div class="text3">
+                <input type="checkbox" />
+                <p>개인정보처리방침에 동의합니다</p>
+                <a href="#">[약관확인]</a>
+                <h3><a href="#">예약확인</a></h3>
+              </div>
+              <div><h4>* 당일 진료예약은 현장접수만 가능합니다.</h4></div>
+            </div>
           </div>
-          <div class="text">
-            <input type="성함을 입력해주세요" />
-            <input type="number" name="bay" id="" />
+          <div class="btn-wrap">
+            <div class="text">
+              <input
+                type="search"
+                placeholder="진료과명,의료진명,질병명 검색"
+              />
+            </div>
+            <div class="seco">
+              <a href="#">신경과</a>
+              <a href="#">신경외과</a>
+              <a href="#">정형외과</a>
+              <a href="#">외과</a>
+              <a href="#">소화기내과</a>
+              <a href="#">호흡기감염내과</a>
+              <a href="#">심장내과</a>
+              <a href="#">신장내과</a>
+              <a href="#">진단검사의확과</a>
+              <a href="#">비뇨의학과</a>
+              <a href="#">응급과</a>
+              <a href="#">영상의학과</a>
+              <a href="#">가정의학과</a>
+              <a href="#">산부인과</a>
+              <a href="#">마취통증의학과</a>
+            </div>
+          </div>
+          <div class="btn-wrap">
+            <div class="con">
+              <div class="sec1">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAoCAYAAAACJPERAAAACXBIWXMAAAsTAAALEwEAmpwYAAADI0lEQVRYhbXY34tVVRQH8M+9ztjYOGrNZBZokj+yh4KSqOgHlBAUIUr0Ej321yX1EFlPEf1AhILKIIVIrJwQzRytxGZ0poe1j2fP8Zxzzz3jfF/OPvuuvb7rrL33d699B7pjAk9jD2ay/hs4h+9xrYujQUfCh/AqpltslvE1zoxytqED4SyOYGPWdxUXsJQFMsAjWMCVNocTIwin8Fal7xROZu/78Er2fgj/pqB6kW5Ng/9L7/8kwl14EufFXE7jwWQzifvbSLvOaY4h3sveP8DlcR2Mi2Uxb0X773EdtH3pBI6KdBVYwnFcxw5lCt/Elsr4T7Lg7nDcFtB9Nf1H8QX+EHP3Ygqgismavk6kSzWDp/FGy7gCK00/tM3prQ6O14X0ek/C1gU2avWe70l6CYt9SX/oSfpj24+jtHcx2dStzib8jm/WQgrzYsXOdbC9iI9HGXUhhV+F/s6q3383RUo/6+Ksj/buEeI+JfbxnzirPBTuGiaxfYTNnDiVRqJNkWZF+i+KVX5EfNVvoixZTONnxELbKSqHq9iEezWcPk2kT+B5fJdIl8S8zWlfUDfSc6M4/E/jqy6kh8S8URZaQ6FQow79KvnjImOfyua8Kg6vZYT0W2iF30K7t4uTaUP+Y4HnsLsnyShswetV0m2i5llPPIzHctKXGgz7prcJzxak20QxXYdcfe65C6RT2D0U+6sOF4TSENvlZIPduNg7FEu6igV8JOrczamvWmTXobgFDDTr+gNFeqs4kZ7P4B0cTk5OpUDqcAt/pXahyXXYNBR5ruJSej6VnjuUGVmosb+GY0K9CtIP8XMda1PlUFwRihvYFeWlqK4sPa5Ur0eVwv+58usLrEyor9peEBXAlyLVN1P/QXdeF88qi7DDIivLeD8F8q1Qutto+tIZIV07E+FmoVgHa2x/Sc8DyrJmiJdTe746oE3A52TS1YDL4qgjRH5FKSj5ojqTgrod0VpwWins56y+/p/I2qsKtbWS7sraW8XBXWB/1j6QtQ3wbsV4XMyLbbTP6r8I4CcxhXkAywO8rX4brBsG4rq339pT3QUrmP8fgKSaJPInMM4AAAAASUVORK5CYII="
+                    alt=""
+                  />
+                  <span>진료안내</span>
+                </a>
+              </div>
+              <div class="sec2">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNElEQVRYhbXY328UVRQH8A9bKi2t2JZSpS1aajD4K/HXm4/qg7/+UJ9NfNDwqIkJ8oJGflgsNUjWQsEW2mwLrQ/nDjtMZ3Zntus3mczM3nPP/d5zz6/ZY46Ok/gUp/EPNrGB9fReG8eHQGYKr6TnhXRleIgVXMPjfopGhkDmEbaENTawjVG8gDHM422x8bu9FB0bApkqvXN4I13Zpv/FJdwrm1RlmTmcFbt7NCChx1jD9bTOnLDUm3iQrkM7KOIznM+9r+L7AQnlMY9PMJ7eLwl/eoaiZb7GucJvU1gUOzwKtnADrwkLLeNvOcvnyXwl2Jdhsg+hMbyXZE7iCTolck+SjgvCBV7Hr9jPk3kHb/XYVUbonAjTIt7HByLEzyd9MyK0dwqy+7idZFp4CbcyMsfxuXphPoHpbHIOu7oWGRe+OC02uId2Qb6TZBeT3Cp2RrAkzFYX0/jD88ewLZzxd2G5LcyKfLOIA4dzTDute0JY52YLZxoQyTDZY2wbv+GbHIGPlPvjL+m+gImWOLemKE1aBezhW1GriPpVxEqSg+WWGjWjgB+VR0oVfkj3MRHWeezjTnqeb4l6UgdPcVkcQRPcFxWcCOUisqOcbYky/7SG0ru40pBIhrV0nykZy8rCREuE5Z0SoSJeFvVlEGSbPVUytps9ZM5bJ9WP4kuDtR1rIu3fKBl7diqZ4od4t8ZCI6KalynthR1c1T2uPDoiVdzPL76HV2sofjFNvt2QUBUORAZezZNZF+l7tIaCWZE5/xoSIRw+lg31S8OcqENlph8KmU3R5U/VnH9GWGmlZOxDfCz63wnRuzQiA3+K46r75TAl2oa2brvwBS4Ky40Lp1/QJ2rLyBwIX+jX3+QxnuQ7ok9ZKpGZ7EeoKpR3RGZcbkCIaL7KsmyeUGXH2CuvPBDtQLG4HRWVhPoluXsi/yz+D4R2FT5/66T2tkjlS0MmNKKQyes2VtfxnWZ9TD/sFX9oUvQ2xU5OK6++TfGTbhfYmAzR0d8U0XZ2gPkZLhvAgauwLqw0qnlDf0W3EX8Ow/gX4pTItst6H18HPyv/CBwamTzmRQGdEfXoQERiW9Sv3eqp/AfSgqpqlQ6CiwAAAABJRU5ErkJggg=="
+                    alt=""
+                  />
+                  <span>전화번호안내</span>
+                </a>
+              </div>
+              <div class="sec3">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYElEQVRYhcWYTU8TURSGnwH8IoJYESgWWkQFBEGNMTH6I0xM/An+PDduTVy4cCmVFgqo0SAqoIgVkUIFF+8dOk7vfLQF+ibd9H7M03Pfc86dOjSuJDAEnAPKwAowD5Qa2dRpYG0fMAlkLGMlIGc+dQHWAxYG5NcOkEUR3KrlIbWApYBb6Ohq1V9gFkHGAowDlkIRStUB5FcZyANvgD9hE8PAMsAYMHAIQH6Vkf/mgZ+2CTawNDqyniMAssmN4C/vl16wNDCFzH3c2gfmgGlgEwSWAB40CcivPRTBV63AY6CrqTgVOUAvUG4BTjUZxqaBlmYTBGi9FfiBSkMj7ekwtQK8dGHOoiI6ApxoEtA3YAZYhOoonQbGEeRxAa6gMvHR+2XQ8Z0BJsznqABXUWF9bxt0wfpQcy0GAI4A7YcE9Bk1dBtQErWoLQe4CdxF1TeLepj/BtBmACfRcdcL9BpYtox5Lwo7wFMHeOKbVEYhzlN9AziJPDiBohkXKAssWcb6URv0XxQWbWBewAU8/cujNnS8N4DOgPUfUJZ9sYxlDFBvwNplB3gEXAiYAOpfsyiKfkAHRdB75181878GAE0S3ZdfOKgl3QeuREzeQ/4rABuWcQf51KY0im5/xDOK5hk5b7noQr9mNGIx6IKXDQD0ahglV9iJuEAzyNeAvY51mc2uNQA4jDzUHbF+06zP+wfC+mMCXa2vR8wDZd4GSooeoq9R68iHBWSRKjlms3uIfppqn3Qgf4zHAIzSOkqiBcvYefOc70DeAR5Sud8fmM+ysBN5cKwOwA0DVAgAmuJ/6zwPqmNF5J88qsRedRi4CRTtMK0ZoHeWsV50CrZq8CmswAJsUzFn2TfWTqXR+wHXzDpbP7yIInQ55LlvHeAOcDtkEqh3ziDD7loAB5Hh3T9VbO2nG2V7GBAoGM9cryTRrxiMsaiAjmc7Yq6rS8ibUS/Ou2bfHFDym7jfbBIFuEOlIAYBJs1e6RhAbsIdXBqCsiuFvBMXcAn4DbSiLBuNAbSFrtHW/zGi0r4b+S8TMa8WbVM5Mn9CHShuPepBHhxqAKiEMnWW6hJUpVoLZR86pjh91FURJcwcNfy7WG+LSaAIXg2Zs4n8lyP4OhSoRntfAtWmFHoX2EcvE3MoY60NOo7+ATJ6yfNjpixgAAAAAElFTkSuQmCC"
+                    alt=""
+                  />
+                  <span>병원층별안내</span>
+                </a>
+              </div>
+              <div class="sec4">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAmCAYAAACh1knUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADVUlEQVRYha3Y229VRRQG8F/PKRaxtbVqbRUVL2Bj1CBqQGPwAjE+6Zt/pcYnH4zGaKPRYEy8BI2ooaIIVhQasBbbUh/W3unxdM/s2YUv2TknZ82s+c6ambW+tUd0x23Yh3swjjGM4F9cwXksYqmL05GOBJ7Cg4Xjz+KLitgNI/IYniscO4wvcaJtUL/A0RE8vUMSMIspnL4eIk/i0HWQqDEtztPPOyFyJ47dABI17sDF6tmGXmbiywXOV3AOv+FywfgXJc7laGLCfZjMOLyKz/AjNgZ+34fDmbmjeAJfDRtSW3NEHLAmrOItEYnNIdslfFcRujkxfwrfDP/YtDU9zCWcwLv4O2O/hncaSNYYx60lRKZxU8LJ79XThn/wfcZ+VwmR8YyDxQISNX7N2LatkdqaFK52ILKesW07m02L5hxMdCCyO2NbKyGynHGwvwORAxnbtjVSRK4kHIzj8QISe3F3xn6uhAicyTh5Fg9n7HN4NWNf0nDWUgltWZT+FB4QiWldCKI+ZnAQz8vLi481bE1uwjE8lLHX2BDJK1UuBvEX3mwy5K7qgsiSbegXkoD3U4YckTV8VLhACb4WtagzEfhBoeZswYqo1km0ESETzg54r21AiWZdq569OyRxCifbBpVEhNjfRonXguJz1kZkbGBMa3gb8IEtXZISSmjemr7InIdEcpoTh3a1ss0WkjgjGiyVn5eEDhkT+vZ/xXWYyEGRyA6Izq4v1NSf4uqdxby0cBrE2yLZTeMFEdlJoYcfxR6R7jcGiUzgNRGJXQ1O7xeCd7OaPN9CYsGWkntdRGEQdUmYxx+43K8GvSGvzHoV2UWhVydwe2LskqgnRIOW65VHRfRP94T8Lwn1flvnY0GDuKlQ551xPFPgF4728EjhYDhefV4TN2IYJ2xpmeMN9hRmespUeY09ouch+thB3bIsOn/iz8108LvSwycdJhCd2lT1fTAqdZ7ZhaMdfX7aFz3IJeUvYIi3RSfF1ftJ5JkLle0V6S6xCZ/j2/r6XhTvLybke94au6vFfhGVte78Dis/cxfwoahFjQptVlype3FLi7NNkeQ2RdZsu32r4s3BKUO6OCcVRypScyI7ToorOVifhpPfuq3asikitSwifl6o98a+6T/yEaI35pRfjAAAAABJRU5ErkJggg=="
+                    alt=""
+                  />
+                  <span>찾아오시는길</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="section" id="section1"></div>
+      <div class="section" id="section02">
+        <div class="wrap2">
+          <div class="left">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <p>서비스로 바로가기</p>
+              <h1>
+                원하시는 항목을<br />
+                빠르게 찾아보세요
+              </h1>
+            </div>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://www.dchp.or.kr/_nuxt/img/section02_tab01.4bbb4d9.png"
+                    alt=""
+                /></a>
+                <p>진료예약</p>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://www.dchp.or.kr/_nuxt/img/section02_tab03.293c159.png"
+                    alt=""
+                  />
+                </a>
+                <p>예약확인</p>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://www.dchp.or.kr/_nuxt/img/section02_tab02.01ab2a6.png"
+                    alt=""
+                /></a>
+                <p>종합검진예약</p>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://www.dchp.or.kr/_nuxt/img/section02_tab04.fa81ff0.png"
+                    alt=""
+                  />
+                </a>
+                <p>전화번호안내</p>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="	https://www.dchp.or.kr/_nuxt/img/section02_tab06.4baa20c.png"
+                    alt=""
+                /></a>
+                <p>각종증명서</p>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://www.dchp.or.kr/_nuxt/img/section02_tab05.0a66590.png"
+                    alt=""
+                /></a>
+                <p>비급여수가안내</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrap3">
+          <div class="rew">
+            <div class="left1">
+              <p>진료과 안내</p>
+              <p>진료분야를<br />확인하실 수 있습니다</p>
+              <div>
+                <a href="#">바로가기</a>
+                <span>+</span>
+                <img
+                  src="	https://www.dchp.or.kr/_nuxt/img/is02b_01.7943341.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="left2">
+              <p>외래 진료안내</p>
+              <p>
+                외랠 진료 절차와 예약방법을<br />
+                안내드립니다.
+              </p>
+              <div>
+                <a href="#">바로가기</a>
+                <span>+</span>
+                <img
+                  src="https://www.dchp.or.kr/_nuxt/img/sec2_img2.a3838de.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://api.dchp.or.kr/storage/z6J70ST7nlG7Y0RAy3IuS9xIeNDjarG9sXUPwdA3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://api.dchp.or.kr/storage/hpQlXBZptrNE1GH8kLONbkjz2TwksD3n9L1gtHdx.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://api.dchp.or.kr/storage/09Ixqeamq04ExM85fxKpRl6d7X0Al6KIq0MIFzb3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://api.dchp.or.kr/storage/z6J70ST7nlG7Y0RAy3IuS9xIeNDjarG9sXUPwdA3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://api.dchp.or.kr/storage/hpQlXBZptrNE1GH8kLONbkjz2TwksD3n9L1gtHdx.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rew1">
+            <div class="right1">
+              <p>의료진 안내</p>
+              <p>
+                의료진 스케줄을 확인하고<br />
+                예약해보세요.
+              </p>
+              <div>
+                <a href="#">바로가기</a>
+                <span>+</span>
+                <img
+                  src="https://www.dchp.or.kr/_nuxt/img/sec2_img3.69690ca.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="right2">
+              <p>병원층별안내</p>
+              <p>
+                원내 위치를 층별로 안내<br />
+                하여 드립니다.
+              </p>
+              <div>
+                <a href="#">바로가기</a>
+                <span>+</span>
+                <img
+                  src="	https://www.dchp.or.kr/_nuxt/img/sec2_img4.69c2006.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="section fp-auto-height" id="section3">
         <div class="con"></div>
       </div>
