@@ -15,3 +15,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+$("#fullpage").fullpage({
+  navigation: true,
+  navigationPosition: "left",
+});
