@@ -10,19 +10,33 @@ a {
   text-decoration: none;
   color: #333;
 }
-.head {
+body {
+  background: #efe5d9;
+}
+header {
+  position: fixed;
   height: 70px;
-  padding: 0 80px;
+  width: 100%;
   margin: 0 auto;
+  background: #efe5d9;
+  opacity: 0.8;
+  z-index: 999;
+}
+.head {
+  padding: 0 80px;
+  height: 100%;
+}
+.head .head-wrap {
+  height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .wrap-menu {
-  position: relative;
   cursor: pointer;
 }
-.wrap-menu::before,
-.wrap-menu::after {
+.head-wrap .wrap-menu::before,
+.head-wrap .wrap-menu::after {
   content: "";
   width: 100%;
   height: 3px;
@@ -37,21 +51,29 @@ a {
   background: #1e1e1e;
   margin: 10px 0;
 }
+.logo {
+  width: 190px;
+  padding-left: 87px;
+}
 .logo img {
   width: 100%;
 }
 .menu {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .menu ul {
   display: flex;
   align-items: center;
   position: absolute;
   left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   column-gap: 87px;
+}
+.menu ul li a {
+  color: #000;
 }
 .search {
   display: flex;
@@ -59,6 +81,9 @@ a {
   position: relative;
   width: 160px;
   height: 40px;
+}
+.search input {
+  border-radius: 25px;
 }
 .search a {
   display: block;
@@ -69,4 +94,91 @@ a {
   top: 0;
   background: url(https://www.shinsegaefood.com/images/web/icon/ico_search_25.png)
     no-repeat left center/25px auto;
+}
+.wrap {
+  background: #efe5d9;
+  padding-bottom: 160px;
+  height: 100vh;
+}
+.wrap .con {
+  width: 100%;
+  height: 100vh;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+.main-visual {
+  padding-top: 102px;
+}
+.main-visual img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.swiper {
+  width: 100%;
+  height: 40%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-con1 {
+  width: 100%;
+  height: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-top: 142px;
+}
+
+.col-item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #7d7d7d;
+  box-shadow: 5px 5px 6px 0;
+  border-radius: 35px;
+  box-sizing: border-box;
+  z-index: 999;
+  position: relative;
+}
+.txt {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid #7d7d7d;
+  border-radius: 25px 25px 0 0;
+}
+.txt span {
+  text-align: left;
+  display: block;
+  padding: 25px 24px;
+}
+.col {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 35px;
+  box-sizing: border-box;
+}
+.col img {
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; */
 }
