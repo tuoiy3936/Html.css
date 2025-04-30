@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 ul {
   list-style: none;
 }
@@ -11,7 +18,7 @@ a {
   color: #333;
 }
 body {
-  background: #efe5d9;
+  font-family: Pretendard-Regular, -apple-system, Gothic Neo, sans-serif;
 }
 header {
   position: fixed;
@@ -33,7 +40,57 @@ header {
   position: relative;
 }
 .wrap-menu {
-  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.gnb-wrap {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: #0c0c00;
+  overflow: hidden;
+}
+.gnb-logo {
+  width: 100%;
+  max-width: 1520px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 120px 29px;
+  border-bottom: 2px solid #fff;
+}
+.gnb-menu {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.gnb-menu ul li a {
+  color: #fff;
+}
+.gnb-menu ul li h3 {
+  padding: 40px;
+}
+.gnb-menu .sub {
+  padding: 10px;
+}
+.gnb-menu .sub li {
+  padding: 12px 0;
+}
+.gnb-menu ul li {
+  padding: 9px 0;
 }
 .head-wrap .wrap-menu::before,
 .head-wrap .wrap-menu::after {
@@ -96,15 +153,19 @@ header {
     no-repeat left center/25px auto;
 }
 .wrap {
-  background: #efe5d9;
-  padding-bottom: 160px;
-  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #efe5d9 43.3%, #1e1e1e 0%);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 .wrap .con {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   max-width: 1470px;
   margin: 0 auto;
+  padding-bottom: 160px;
+  position: relative;
 }
 .main-visual {
   padding-top: 102px;
@@ -116,7 +177,7 @@ header {
 }
 .swiper {
   width: 100%;
-  height: 40%;
+  height: 100%;
 }
 .swiper-slide {
   text-align: center;
@@ -126,6 +187,8 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  border: 1px solid #7d7d7d;
+  box-shadow: 5px 5px 6px 0;
 }
 .swiper-slide img {
   display: block;
@@ -133,28 +196,30 @@ header {
   height: 100%;
   object-fit: cover;
 }
+#food {
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  position: relative;
+}
 .main-con1 {
   width: 100%;
-  height: 100%;
   max-width: 1470px;
   margin: 0 auto;
   padding-top: 142px;
+  position: relative;
 }
 
 .col-item {
-  display: inline-block;
+  display: block;
   width: 100%;
-  height: 100%;
-  border: 1px solid #7d7d7d;
-  box-shadow: 5px 5px 6px 0;
-  border-radius: 35px;
-  box-sizing: border-box;
+  padding-top: 22.24vw;
   z-index: 999;
   position: relative;
+  border-radius: 35px;
 }
 .txt {
   width: 100%;
-  height: 30%;
   position: absolute;
   left: 0;
   top: 0;
@@ -170,15 +235,251 @@ header {
   padding: 25px 24px;
 }
 .col {
-  height: 100%;
-  overflow: hidden;
-  border-radius: 35px;
-  box-sizing: border-box;
-}
-.col img {
-  /* position: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; */
+  height: 100%;
+}
+.col img {
+  width: 100%;
+  object-fit: cover;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none !important;
+}
+.swiper-button-next {
+  background-image: url(https://www.shinsegaefood.com/images/web/icon/ico_arr_right_50.png);
+  width: 82px !important;
+  height: 82px !important;
+}
+.swiper-button-prev {
+  background-image: url(https://www.shinsegaefood.com/images/web/icon/ico_arr_left_50.png);
+  width: 82px !important;
+  height: 82px !important;
+}
+.main-con2 {
+  padding-top: 142px;
+}
+.main-video {
+  width: 100%;
+  height: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.2%;
+  position: relative;
+}
+.video1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  object-fit: cover;
+  z-index: 10;
+}
+.main-con3 {
+  padding-top: 150px;
+}
+.col-item {
+  border-radius: 35px;
+}
+.txt-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.main-con4 {
+  padding-top: 170px;
+}
+.main-con5 {
+  padding-top: 154px;
+}
+.col-contents {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 13vw;
+}
+.txt-contents {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.txt-contents span {
+  display: block;
+  color: #fff;
+  text-align: left;
+  font-size: 15px;
+}
+.col {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.flot-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  left: 0;
+  bottom: -35px;
+  padding-bottom: 65px;
+  z-index: 30;
+}
+.flot-menu ul {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+  background: #8f8f8f;
+  padding: 5px 3px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.flot-menu ul li {
+  min-width: 208px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+}
+.flot-menu ul li a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.flot-menu ul li a::before {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+.flot-menu ul li:nth-child(1) a::before {
+  content: "";
+  background-image: url(https://www.shinsegaefood.com/images/web/icon/ico_esg_44.png);
+}
+.flot-menu ul li:nth-child(2) a::before {
+  content: "";
+  background-image: url(https://www.shinsegaefood.com/images/web/icon/ico_cs_44.png);
+}
+.flot-menu ul li:nth-child(3) a::before {
+  content: "";
+  background-image: url(https://www.shinsegaefood.com/images/web/icon/ico_recruit_45.png);
+}
+.flot-menu ul li:nth-child(2) {
+  background: #0c0c00;
+}
+.flot-menu ul li:hover {
+  background: #0c0c00;
+}
+.bg {
+  position: absolute;
+  left: 0;
+  top: 180%;
+  bottom: 330px;
+}
+footer {
+  border-top: 2px solid #5f5f5f;
+  width: 100%;
+  background: #1e1e1e;
+}
+.infor {
+  padding: 87px 0 100px 0;
+  border-bottom: 2px solid #5f5f5f;
+}
+.inner div {
+  display: flex;
+  justify-content: space-between;
+}
+.inner div h1 {
+  color: #fff;
+}
+.inner > p {
+  color: #909090;
+}
+.inner > p:nth-child(2) {
+  padding: 50px 0 30px 0;
+}
+.inner > p:last-child {
+  padding: 20px 0;
+}
+.inner div ul {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.inner div ul li a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #5f5f5f;
+  position: relative;
+  border-radius: 20px;
+}
+.inner div img {
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner ul {
+  display: flex;
+}
+.inner ul li {
+  color: #909090;
+}
+.foot-menu {
+  padding: 50px 0 80px 0;
+  display: flex;
+  align-items: center;
+}
+.foot-wrap {
+  margin-left: 52px;
+}
+.foot-wrap ul {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+.foot-wrap ul li:nth-child(2) a {
+  color: #fff;
+}
+.foot-wrap ul li a::after {
+  content: "";
+  background-image: url(https://www.shinsegaefood.com/images/web/icon/ico_arr_upward_16.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto 100%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin: 4px 0 0 7px;
+  vertical-align: top;
+}
+.foot-wrap ul li a {
+  color: #909090;
 }
