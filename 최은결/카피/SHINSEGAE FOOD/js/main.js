@@ -52,3 +52,11 @@ var swiper = new Swiper(".mySwiper1", {
     },
   },
 });
+let gnb = document.querySelectorAll(".wrap-menu .bar");
+
+gnb.forEach(function (v, k) {
+  v.onclick = function (e) {
+    e.preventDefault();
+    document.querySelector("nav").classList.add("actvie");
+  };
+});

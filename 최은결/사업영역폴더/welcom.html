@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .wrap {
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .wrap .menu {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+      .wrap .menu ul {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .wrap .menu ul li a {
+        color: #000;
+      }
+      .wrap .menu ul li a.on {
+        color: #ea002c;
+      }
+      .sub {
+        position: relative;
+        text-align: center;
+      }
+      .sub .sub-menu {
+        padding-top: 140px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+      .sub .sub-menu h1 {
+        margin-bottom: 30px;
+      }
+      .sub .sub-menu.on {
+        opacity: 1;
+      }
+      .sub .sub-menu div {
+        display: flex;
+        gap: 50px;
+      }
+      .sub .sub-menu div p {
+        color: #000;
+      }
+      .sub .sub-menu div p a.on {
+        color: #ea002c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="menu">
+        <ul>
+          <li><a href="#">아동복지사업</a></li>
+          <li><a href="#">청소년복지사업</a></li>
+          <li><a href="#">노인복지사업</a></li>
+          <li><a href="#">장애인복지사업</a></li>
+          <li><a href="#">사회봉사사업</a></li>
+        </ul>
+      </div>
+      <div class="sub">
+        <div class="sub-menu">
+          <h1>아동복지사업</h1>
+          <div>
+            <p><a href="#">지역아동센터사업</a></p>
+            <p><a href="#">우리동네키움센터사업</a></p>
+            <p><a href="#">어린이집사업</a></p>
+          </div>
+        </div>
+        <div class="sub-menu">
+          <h1>청소년복지사업</h1>
+          <div>
+            <p><a href="#">청소년복지시설사업</a></p>
+            <p><a href="#">웰컴투모로우사업</a></p>
+          </div>
+        </div>
+        <div class="sub-menu">
+          <h1>노인복지사업</h1>
+          <div>
+            <p><a href="#">행복빨래방사업</a></p>
+            <p><a href="#">주거환경개선사업</a></p>
+          </div>
+        </div>
+        <div class="sub-menu">
+          <h1>장애인복지사업</h1>
+        </div>
+        <div class="sub-menu">
+          <h1>사회봉사사업</h1>
+        </div>
+      </div>
+    </div>
+    <script>
+      let fmc = document.querySelectorAll(".wrap .menu ul li");
+      document
+        .querySelector(".wrap .menu ul li")
+        .querySelectorAll("a")[0]
+        .classList.add("on");
+      document.querySelectorAll(".sub .sub-menu")[0].classList.add("on");
+      function my() {
+        fmc.forEach(function (v, k) {
+          v.querySelector("a").classList.remove;
+        });
+        document.querySelectorAll(".sub .sub-menu").forEach(function (v, k) {
+          v.classList.remove("on");
+        });
+        document.querySelectorAll(".wrap .menu ul li").forEach(function (v, k) {
+          v.querySelector("a").classList.remove("on");
+        });
+      }
+      fmc.forEach(function (v, k) {
+        v.onclick = function (e) {
+          e.preventDefault();
+          my();
+          document.querySelectorAll("a")[k].classList.add("on");
+          document.querySelectorAll(".sub .sub-menu")[k].classList.add("on");
+        };
+      });
+    </script>
+  </body>
+</html>

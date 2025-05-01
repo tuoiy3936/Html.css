@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .wrap {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+      .wrap-gnb {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #909090;
+        padding-bottom: 50px;
+        margin-bottom: 30px;
+      }
+      .wrap-gnb h2 {
+        font-size: 42px;
+      }
+      .wrap-gnb ul {
+        display: flex;
+        gap: 40px;
+        text-align: right;
+      }
+      .wrap-gnb ul li a.on p:nth-child(2) {
+        border-bottom: 1px solid #000;
+      }
+      .con {
+        position: absolute;
+      }
+      .con .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        opacity: 0;
+      }
+      .con .inner.on {
+        opacity: 1;
+      }
+      .left {
+        position: relative;
+      }
+      .left h3 {
+        font-size: 22px;
+      }
+      .in {
+        border: #f0f0f0;
+        border-radius: 25px;
+        padding: 15px 15px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .in:hover {
+        background: linear-gradient(to right, #fadcdd, #f6e8f1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="wrap-gnb">
+        <h2>
+          Sustainable <br />
+          Love & Respect
+        </h2>
+        <ul>
+          <li>
+            <a href="#">
+              <p>Environmental</p>
+              <p>환경</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Social</p>
+              <p>사회</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Governance</p>
+              <p>지배구조</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="con">
+        <div class="inner">
+          <div class="left">
+            <h3>
+              애경산업은 지속가능한 환경을 위해 <br />
+              책임을 다하겠습니다
+            </h3>
+            <button class="in">
+              <a href="#">바로가기</a>
+              <span
+                ><img
+                  src="https://www.aekyung.co.kr/img/front/sub/sustainable/report/arrow_link.webp"
+                  alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="right">
+            <img
+              src="https://www.aekyung.co.kr/img/front/main/mo_main_tab01.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="con">
+        <div class="inner">
+          <div class="left">
+            <h3>
+              애경산업의 노력은<br />
+              임직원과 협력사,지역사회<br />
+              그리고 고객이 함께하는 향기로운 동행이 될 것입니다.
+            </h3>
+            <button class="in">
+              <a href="#">바로가기</a>
+              <span
+                ><img
+                  src="https://www.aekyung.co.kr/img/front/sub/sustainable/report/arrow_link.webp"
+                  alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="right">
+            <img
+              src="https://www.aekyung.co.kr/img/front/main/mo_main_tab02.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="con">
+        <div class="inner">
+          <div class="left">
+            <h3>투명하고 건전한 기업 활동을 이어나가겠습니다.</h3>
+            <button class="in">
+              <a href="#">바로가기</a>
+              <span
+                ><img
+                  src="https://www.aekyung.co.kr/img/front/sub/sustainable/report/arrow_link.webp"
+                  alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="right">
+            <img
+              src="https://www.aekyung.co.kr/img/front/main/mo_main_tab03.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let gnb = document.querySelectorAll(".wrap-gnb ul li");
+      document.querySelectorAll(".con")[0].classList.add("on");
+      document.querySelectorAll(".con .inner")[0].classList.add("on");
+      function my() {
+        gnb.forEach(function (v, k) {
+          v.querySelector("a").classList.remove;
+        });
+        document.querySelectorAll(".con .inner").forEach(function (v, k) {
+          v.classList.remove("on");
+        });
+      }
+      gnb.forEach(function (v, k) {
+        v.onclick = function (e) {
+          e.preventDefault();
+          my();
+          document.querySelectorAll(".con .inner")[k].classList.add("on");
+        };
+      });
+    </script>
+  </body>
+</html>
