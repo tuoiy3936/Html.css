@@ -10,6 +10,57 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      @media screen and (max-width: 1470px) {
+        .head {
+          padding: 0 30px 0 100px;
+        }
+        .menu ul {
+          column-gap: 50px;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        .menu {
+          position: revert;
+          transform: none;
+          margin-left: auto;
+        }
+        .search {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .head {
+          padding: 0 10px;
+          height: 100%;
+        }
+        .head .head-wrap {
+          flex-wrap: wrap;
+          align-content: flex-start;
+          justify-content: center;
+        }
+        .logo {
+          padding: 0;
+        }
+        .menu {
+          width: 100%;
+        }
+        .menu ul {
+          justify-content: space-evenly;
+          column-gap: normal;
+        }
+        .wrap-menu .bar {
+          width: 12px;
+          margin: 5px 0;
+        }
+        .wrap .con {
+          padding-bottom: 37px;
+        }
+        .main-visual {
+          padding-top: 11.7vw;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -38,100 +89,12 @@
           <div class="wrap-menu">
             <a href="#" class="bar"></a>
           </div>
-          <nav>
-            <div class="gnb-wrap">
-              <div class="gnb-logo">
-                <a href="#">
-                  <img
-                    src="https://www.shinsegaefood.com/images/web/common/logo_w_277.png"
-                    alt=""
-                  />
-                </a>
-                <p>Site Map</p>
-              </div>
-              <div class="gnb-menu">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <h3>COMPANY</h3>
-                    </a>
-                    <ul class="sub">
-                      <li><a href="#">STORY</a></li>
-                      <li><a href="#">-VISION</a></li>
-                      <li><a href="#">-History</a></li>
-                      <li><a href="#">-Contact Us</a></li>
-                    </ul>
-                    <ul class="sub">
-                      <li><a href="#">PR</a></li>
-                      <li><a href="#">-뉴스</a></li>
-                      <li><a href="#">-홍보영상</a></li>
-                    </ul>
-                    <ul class="sub">
-                      <li><a href="#">IR</a></li>
-                      <li><a href="#">-경영정보</a></li>
-                      <li><a href="#">-재무정보</a></li>
-                      <li><a href="#">-주식정보</a></li>
-                      <li><a href="#">-공시 및 공고</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="#"><h3>BUSINESS</h3></a>
-                  </li>
-                  <li><a href="#">식품제조/유통</a></li>
-                  <li><a href="#">푸드서비스</a></li>
-                  <li><a href="#">프리미엄 다이닝</a></li>
-                  <li><a href="#">베이커리</a></li>
-                  <li><a href="#">프랜차이즈</a></li>
-                  <li><a href="#">자화사</a></li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="#"><h3>ESG</h3></a>
-                  </li>
-                  <li><a href="#">가치체계</a></li>
-                  <li><a href="#">친환경 경영</a></li>
-                  <li><a href="#">품질/안정 경영</a></li>
-                  <li><a href="#">투명경영</a></li>
-                  <li><a href="#">상생경영</a></li>
-                  <li><a href="#">사회공헌</a></li>
-                  <li><a href="#">ESG 정보</a></li>
-                  <li><a href="#">신문고</a></li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="#"><h3>고객지원</h3></a>
-                  </li>
-                  <li><a href="#">고객의 소리</a></li>
-                  <li>
-                    <a href="#">외식브랜드 가맹 및<br />입점문의</a>
-                  </li>
-                  <li><a href="#">위탁급식 상담</a></li>
-                  <li><a href="#">식자재 구매 상담</a></li>
-                  <li><a href="#">식자재 납품 상담</a></li>
-                  <li><a href="#">자주하는 질문</a></li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="#"><h3>채용</h3></a>
-                  </li>
-                  <li><a href="#">인재상</a></li>
-                  <li><a href="#">인사제도</a></li>
-                  <li><a href="#">복리후생</a></li>
-                  <li><a href="#">직무소개</a></li>
-                  <li><a href="#">채용 프로세스</a></li>
-                  <li><a href="#">채용공고</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
         </div>
       </div>
     </header>
     <div class="wrap">
       <div class="con">
-        <div class="main-visual">
+        <div class="main-visual" id="food">
           <img
             src="https://www.shinsegaefood.com/images/web/background/bg_visual.png"
             alt=""
@@ -583,10 +546,10 @@
       <div class="infor">
         <div class="inner" id="food">
           <div>
-            <h1>
+            <h2>
               더나은 라이프스타일,<br />
               신세계푸드에서 다양한 소식을 만나보세요.
-            </h1>
+            </h2>
             <ul>
               <li>
                 <a href="#"
@@ -646,6 +609,95 @@
         </div>
       </div>
     </footer>
+    <nav>
+      <div class="gnb-wrap">
+        <div class="gnb-logo">
+          <a href="#">
+            <img
+              src="https://www.shinsegaefood.com/images/web/common/logo_w_277.png"
+              alt=""
+            />
+          </a>
+          <p>Site Map</p>
+          <a href="#" class="gnb"></a>
+        </div>
+        <div class="gnb-menu">
+          <ul>
+            <li>
+              <a href="#">
+                <h3>COMPANY</h3>
+              </a>
+              <ul class="sub">
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">-VISION</a></li>
+                <li><a href="#">-History</a></li>
+                <li><a href="#">-Contact Us</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">PR</a></li>
+                <li><a href="#">-뉴스</a></li>
+                <li><a href="#">-홍보영상</a></li>
+              </ul>
+              <ul class="sub">
+                <li><a href="#">IR</a></li>
+                <li><a href="#">-경영정보</a></li>
+                <li><a href="#">-재무정보</a></li>
+                <li><a href="#">-주식정보</a></li>
+                <li><a href="#">-공시 및 공고</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"><h3>BUSINESS</h3></a>
+            </li>
+            <li><a href="#">식품제조/유통</a></li>
+            <li><a href="#">푸드서비스</a></li>
+            <li><a href="#">프리미엄 다이닝</a></li>
+            <li><a href="#">베이커리</a></li>
+            <li><a href="#">프랜차이즈</a></li>
+            <li><a href="#">자화사</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"><h3>ESG</h3></a>
+            </li>
+            <li><a href="#">가치체계</a></li>
+            <li><a href="#">친환경 경영</a></li>
+            <li><a href="#">품질/안정 경영</a></li>
+            <li><a href="#">투명경영</a></li>
+            <li><a href="#">상생경영</a></li>
+            <li><a href="#">사회공헌</a></li>
+            <li><a href="#">ESG 정보</a></li>
+            <li><a href="#">신문고</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"><h3>고객지원</h3></a>
+            </li>
+            <li><a href="#">고객의 소리</a></li>
+            <li>
+              <a href="#">외식브랜드 가맹 및<br />입점문의</a>
+            </li>
+            <li><a href="#">위탁급식 상담</a></li>
+            <li><a href="#">식자재 구매 상담</a></li>
+            <li><a href="#">식자재 납품 상담</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"><h3>채용</h3></a>
+            </li>
+            <li><a href="#">인재상</a></li>
+            <li><a href="#">인사제도</a></li>
+            <li><a href="#">복리후생</a></li>
+            <li><a href="#">직무소개</a></li>
+            <li><a href="#">채용 프로세스</a></li>
+            <li><a href="#">채용공고</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

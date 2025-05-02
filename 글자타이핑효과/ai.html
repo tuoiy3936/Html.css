@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>타이핑 효과</title>
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        font-size: 24px;
+        background-color: #111;
+        color: #0f0;
+        padding: 40px;
+      }
+      .typing {
+        border-right: 2px solid #0f0;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text" class="typing"></div>
+
+    <script>
+      const text = "안녕하세요! 이것은 웹 타이핑 효과입니다.";
+      const speed = 100; // 밀리초 단위 (100 = 0.1초)
+
+      let i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("text").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      window.onload = typeWriter;
+    </script>
+  </body>
+</html>

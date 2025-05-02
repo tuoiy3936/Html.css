@@ -13,7 +13,7 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     640: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 4,
@@ -39,11 +39,11 @@ var swiper = new Swiper(".mySwiper1", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 4,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 40,
     },
     1024: {
@@ -54,9 +54,18 @@ var swiper = new Swiper(".mySwiper1", {
 });
 let gnb = document.querySelectorAll(".wrap-menu .bar");
 
+function my() {
+  document.querySelectorAll(".gnb-logo .gnb").forEach(function (v, k) {
+    v.onclick = function (e) {
+      e.preventDefault();
+      document.querySelector("nav").classList.remove("actvie");
+    };
+  });
+}
 gnb.forEach(function (v, k) {
   v.onclick = function (e) {
     e.preventDefault();
+    my();
     document.querySelector("nav").classList.add("actvie");
   };
 });
