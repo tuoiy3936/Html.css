@@ -1,0 +1,203 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+header {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  height: 90px;
+}
+.head {
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.logo > a {
+  margin-right: 20px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.menu > ul {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.menu > ul > li a:hover {
+  color: #d43e42;
+}
+.menuwrap {
+  width: 100%;
+  padding: 30px 0 30px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 90px;
+  z-index: 999;
+  display: none;
+}
+.menuwrap.on {
+  display: block;
+}
+.submenu {
+  width: 100%;
+}
+.btmenu {
+  width: 100%;
+}
+.btmenu ul li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 5px;
+}
+.btmenu:first-child {
+  margin-bottom: 50px;
+}
+.nice {
+  font-size: 14px;
+  line-height: 1;
+  color: #ccc;
+}
+.bmenu {
+  margin-bottom: 50px;
+}
+.bmenu .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+}
+#arrow .swiper-button-prev::after,
+#arrow .swiper-button-next::after {
+  font-size: 16px;
+  color: #000;
+}
+#sub {
+  width: 50%;
+  position: relative;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.inner1 {
+  height: 100%;
+}
+.inner1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.conwrap {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1380px;
+}
+.con {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.con .imgbox1 {
+  flex: 1 0 40%;
+  transition: all 0.5;
+}
+.imgbox1 a {
+  overflow: hidden;
+}
+.con .imgbox1 a img:hover {
+  transform: scale(1.06);
+}
+.con .imgbox1 span {
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+.con .imgbox1 span:nth-child(3) {
+  color: #767676;
+}
+.con .imgbox1 span:hover {
+  color: #d43e42;
+}
+.con .imgbox1 a img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.imgwrap {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+.imgwrap .imgbox2 {
+  width: 100%;
+  height: 100%;
+}
+.imgwrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.innerbox {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -25%);
+}

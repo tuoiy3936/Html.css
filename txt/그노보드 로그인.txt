@@ -1,0 +1,22 @@
+1.로그인 후 정보 div id aside
+<div id="aside">
+        <?php echo outlogin('theme/basic'); // 외부 로그인, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+        <?php echo poll('theme/basic'); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+    </div>
+2.회원가입클릭시 상단 하단 파일찾기
+gnuboard5/theme/basic/head.php-->상단시작 지우기
+gnuboard5/theme/basic/tail.php-->하단끝 지우기
+
+
+
+3.회원가입완료후 메인으로 가기 클릭시 페이지 만들기
+login_ok.php
+
+
+4.메인으로 가기 버튼이 있는 페이지
+gnuboard5/skin/member/basic/register_result.skin.php
+
+5.로그인 클릭시 페이지이동
+
+
+6.로그아웃 클릭시 페이지 이동

@@ -1,0 +1,9 @@
+확대:ctrl + +
+축소:ctrl + -
+손툴: spacebar
+삭제:delete or backspace
+가이드숨기기/보이기 ctrl+ ;
+rulers ctrl+R
+
+한단계씩 앞으로ctrl + ]
+맨앞으로 shirt+ctrl+]

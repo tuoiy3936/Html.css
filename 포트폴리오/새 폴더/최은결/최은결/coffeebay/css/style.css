@@ -1,0 +1,146 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+header {
+  width: 100%;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 40px 0 20px 0;
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: 100;
+}
+.head {
+  width: 100%;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 8px 0;
+}
+.head .left {
+  display: flex;
+  position: relative;
+}
+.head .left li {
+  padding: 0 30px;
+}
+.head .left li a {
+  color: #fff;
+}
+.head .left li:first-child::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.head .right {
+  display: flex;
+  align-items: center;
+  margin-left: 750px;
+  position: relative;
+}
+.head .right li {
+  padding: 0 30px;
+}
+.head .right li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.head .right li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: 73%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.head .right li a {
+  color: #fff;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .menu {
+  display: flex;
+  align-items: center;
+}
+.nav .menu li {
+  margin-left: 110px;
+}
+.nav .menu li a {
+  color: #fff;
+}
+.but li a {
+  margin-left: 300px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  line-height: 35px;
+  font-weight: 400;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#controls {
+  width: 100%;
+  max-width: 905px;
+  margin: 0 auto;
+  position: absolute;
+  left: 68%;
+  bottom: 30%;
+}
+#controls #arrow {
+  width: 10%;
+  position: relative;
+}
+#controls #arrow .swiper-button-next:after,
+#controls #arrow .swiper-button-prev:after {
+  font-size: 19px;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #fff;
+  padding: 15px 15px;
+}
