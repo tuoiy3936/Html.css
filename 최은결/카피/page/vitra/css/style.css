@@ -134,8 +134,12 @@ header {
 }
 .inner1 {
   width: 100%;
-  height: 100%;
+  height: 70vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
 }
 .videotxt {
   position: absolute;
@@ -154,6 +158,7 @@ header {
   height: 100%;
   margin: 0 auto;
   max-width: 1380px;
+  margin-bottom: 10vh;
 }
 .con {
   width: 100%;
@@ -165,11 +170,9 @@ header {
   flex: 1 0 40%;
   transition: all 0.5;
 }
-.imgbox1 a {
+.imgbox1 {
   overflow: hidden;
-}
-.con .imgbox1 a img:hover {
-  transform: scale(1.06);
+  transform: scale(1) translateZ(0);
 }
 .con .imgbox1 span {
   cursor: pointer;
@@ -214,6 +217,7 @@ header {
   margin-bottom: 30px;
 }
 .innerbox > a > span {
+  width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   padding: 10px 0;
