@@ -133,7 +133,16 @@ header {
   height: 100%;
 }
 .inner1 {
+  width: 100%;
   height: 100%;
+  position: relative;
+}
+.videotxt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
 .inner1 video {
   width: 100%;
@@ -181,23 +190,162 @@ header {
 }
 .imgwrap {
   width: 100%;
-  min-height: 400px;
   position: relative;
+  cursor: pointer;
+  margin-bottom: 150px;
 }
 .imgwrap .imgbox2 {
+  background-image: url(https://static.vitra.com/media-resized/vp3mrjN96bOE6U-kgYIGSSK5LFAi6UeFpsXcxePNnf0/fill/1920/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzgyMzMyNjcvc3RvcmFnZS92X3BhcmFsbGF4XzE5MjB4MTA4MC83Nzk2MTI5OC5qcGc.jpg);
   width: 100%;
-  height: 100%;
-}
-.imgwrap img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 400px;
+  background-position: right 30%;
+  background-size: cover;
 }
 .innerbox {
   display: block;
   position: absolute;
   left: 50%;
-  top: 25%;
-  transform: translate(-50%, -25%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  text-align: center;
+}
+.innerbox > a > h2 {
+  margin-bottom: 30px;
+}
+.innerbox > a > span {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+.innerbox > a > span:hover {
+  background: #000;
+  color: #fff;
+}
+.slid {
+  width: 100%;
+  max-width: 1380px;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.slid h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.imgbox3 {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+.imgbox3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imgbox3 > div a span {
+  display: block;
+  text-align: center;
+}
+.imgbox3 > div a span:nth-child(2) {
+  color: #767676;
+}
+.imgbox3 > div a:hover span {
+  color: #d43e42;
+}
+footer {
+  width: 100%;
+  height: 100%;
+}
+.wrap-foot {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+}
+.top-foot {
+  width: 100%;
+  height: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 85px;
+  padding-bottom: 80px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon > a {
+  display: block;
+  margin-right: 8px;
+}
+.icon > a > span:hover {
+  color: #d43e42;
+}
+.footwrap {
+  width: 100%;
+  background: #e6e6e6;
+}
+.tali-foot {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.foot-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 60px;
+  margin-bottom: 50px;
+}
+.subfoot {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.subfoot h4 {
+  border-bottom: 1px solid #000;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+.subfoot a {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 10px;
+}
+.subfoot a:hover {
+  color: #d43e42;
+}
+.snsimgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.snsimgbox > a {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+.snsimgbox > a:hover {
+  color: #d43e42;
+  fill: #d43e42;
+}
+.copy {
+  text-align: center;
+}
+.copy a {
+  display: block;
+  padding: 30px 0;
+}
+.copy a:hover {
+  color: #d43e42;
 }
