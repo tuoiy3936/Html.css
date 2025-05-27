@@ -1,8 +1,5 @@
-let menu = document.querySelectorAll(".menu > ul > li > a ");
-let sub = document.querySelectorAll(".menuwrap");
-menu.forEach(function (v, k) {
-  v.onclick = function (e) {
-    e.preventDefault();
-    sub.classList.add("on");
+document.querySelectorAll(".menu > ul > li").forEach(function (v, k) {
+  v.onmouseEntet = function () {
+    document.querySelectorAll(".menuwrap")[k].classList.add("on");
   };
 });
